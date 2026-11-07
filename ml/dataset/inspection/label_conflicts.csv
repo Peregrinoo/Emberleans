@@ -1,0 +1,7 @@
+a,b,label_a,label_b,thumb_sim,emb_sim
+train/abrasion/heridas-cortantes-1-1-Editado_jpg.rf.d2178ba9288afb4f20d873ea09d4c6cb.jpg,train/laceration/133_jpg.rf.88c1a4cb3374ba4729fe8b8cfc0cfd76.jpg,Abrasion,Laceration,0.888,0.948
+train/abrasion/heridas-cortantes-1-1-Editado_jpg.rf.d2178ba9288afb4f20d873ea09d4c6cb.jpg,train/laceration/4db726f3-cbb7-4c32-b905-862e70173d9a_jpg.rf.bb8b645754917c41893b145e2606c59e.jpg,Abrasion,Laceration,0.831,0.923
+train/abrasion/heridas-cortantes-1-1-Editado_jpg.rf.d2178ba9288afb4f20d873ea09d4c6cb.jpg,train/laceration/cut-44-_jpg.rf.f81ab7c7c62f5109298f6e7caa1dedd9.jpg,Abrasion,Laceration,0.987,0.751
+train/laceration/133_jpg.rf.88c1a4cb3374ba4729fe8b8cfc0cfd76.jpg,valid/abrasion/heridas-cortantes-1-1-_jpg.rf.de3d4bc9c3422e725c511f0882e85bcd.jpg,Laceration,Abrasion,0.891,0.954
+train/laceration/4db726f3-cbb7-4c32-b905-862e70173d9a_jpg.rf.bb8b645754917c41893b145e2606c59e.jpg,valid/abrasion/heridas-cortantes-1-1-_jpg.rf.de3d4bc9c3422e725c511f0882e85bcd.jpg,Laceration,Abrasion,0.846,0.966
+train/laceration/cut-44-_jpg.rf.f81ab7c7c62f5109298f6e7caa1dedd9.jpg,valid/abrasion/heridas-cortantes-1-1-_jpg.rf.de3d4bc9c3422e725c511f0882e85bcd.jpg,Laceration,Abrasion,0.994,0.777

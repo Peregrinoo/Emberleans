@@ -1,0 +1,147 @@
+{
+  "n": 188,
+  "accuracy": 0.8723404255319149,
+  "macro_f1": 0.8077384906867449,
+  "weighted_f1": 0.8727320522762005,
+  "burn_recall": 0.75,
+  "burn_precision": 0.8181818181818182,
+  "per_class": {
+    "Abrasion": {
+      "precision": 0.5625,
+      "recall": 0.6,
+      "f1": 0.5806451612903226,
+      "support": 15
+    },
+    "Bruise": {
+      "precision": 0.8055555555555556,
+      "recall": 0.9666666666666667,
+      "f1": 0.8787878787878788,
+      "support": 30
+    },
+    "Burn": {
+      "precision": 0.8181818181818182,
+      "recall": 0.75,
+      "f1": 0.782608695652174,
+      "support": 24
+    },
+    "Laceration": {
+      "precision": 0.8888888888888888,
+      "recall": 0.8,
+      "f1": 0.8421052631578947,
+      "support": 30
+    },
+    "Normal Skin": {
+      "precision": 0.9655172413793104,
+      "recall": 0.9438202247191011,
+      "f1": 0.9545454545454546,
+      "support": 89
+    }
+  },
+  "confusion_matrix": [
+    [
+      9,
+      1,
+      2,
+      3,
+      0
+    ],
+    [
+      1,
+      29,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      1,
+      18,
+      0,
+      1
+    ],
+    [
+      2,
+      2,
+      0,
+      24,
+      2
+    ],
+    [
+      0,
+      3,
+      2,
+      0,
+      84
+    ]
+  ],
+  "bootstrap": {
+    "accuracy_95ci": [
+      0.824468085106383,
+      0.9148936170212766
+    ],
+    "macro_f1_95ci": [
+      0.7333188661796601,
+      0.8667445519515117
+    ],
+    "burn_recall_95ci": [
+      0.5714285714285714,
+      0.9130434782608695
+    ]
+  },
+  "subset_without_screenshot_like": {
+    "n": 182,
+    "accuracy": 0.8681318681318682,
+    "macro_f1": 0.7949036202431788,
+    "weighted_f1": 0.8682670494003262,
+    "burn_recall": 0.6842105263157895,
+    "burn_precision": 0.7647058823529411,
+    "per_class": {
+      "Abrasion": {
+        "precision": 0.5625,
+        "recall": 0.6,
+        "f1": 0.5806451612903226,
+        "support": 15
+      },
+      "Bruise": {
+        "precision": 0.8,
+        "recall": 0.9655172413793104,
+        "f1": 0.875,
+        "support": 29
+      },
+      "Burn": {
+        "precision": 0.7647058823529411,
+        "recall": 0.6842105263157895,
+        "f1": 0.7222222222222222,
+        "support": 19
+      },
+      "Laceration": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8,
+        "f1": 0.8421052631578947,
+        "support": 30
+      },
+      "Normal Skin": {
+        "precision": 0.9655172413793104,
+        "recall": 0.9438202247191011,
+        "f1": 0.9545454545454546,
+        "support": 89
+      }
+    }
+  },
+  "subset_screenshot_like": {
+    "n": 6,
+    "accuracy": 1.0,
+    "labels": {
+      "Abrasion": 0,
+      "Bruise": 1,
+      "Burn": 5,
+      "Laceration": 0,
+      "Normal Skin": 0
+    }
+  },
+  "model": {
+    "dir": "models",
+    "best_epoch": 3,
+    "phase": "finetune"
+  }
+}

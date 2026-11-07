@@ -1,0 +1,11 @@
+              precision    recall  f1-score   support
+
+    Abrasion      0.562     0.600     0.581        15
+      Bruise      0.806     0.967     0.879        30
+        Burn      0.818     0.750     0.783        24
+  Laceration      0.889     0.800     0.842        30
+ Normal Skin      0.966     0.944     0.955        89
+
+    accuracy                          0.872       188
+   macro avg      0.808     0.812     0.808       188
+weighted avg      0.877     0.872     0.873       188

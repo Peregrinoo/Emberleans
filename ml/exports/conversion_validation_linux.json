@@ -1,0 +1,101 @@
+{
+  "environment": {
+    "torch": "2.7.0",
+    "coremltools": "9.0",
+    "python": "3.12.16",
+    "platform": "linux"
+  },
+  "split_used": "val",
+  "n_images": 188,
+  "val_accuracy_pytorch_train_pipeline": 0.8723404255319149,
+  "val_accuracy_pytorch_app_pipeline": 0.8723404255319149,
+  "mlpackage_size_bytes": 3150714,
+  "checks": [
+    {
+      "check": "arquitetura: chaves e formas do state_dict",
+      "ok": true,
+      "detail": "244 tensores; mismatches=0"
+    },
+    {
+      "check": "carregamento estrito dos pesos",
+      "ok": true,
+      "detail": "strict=True, 1,522,981 parâmetros, dtype=torch.float32"
+    },
+    {
+      "check": "ordem das classes (config/código/mapping)",
+      "ok": true,
+      "detail": [
+        "Abrasion",
+        "Bruise",
+        "Burn",
+        "Laceration",
+        "Normal Skin"
+      ]
+    },
+    {
+      "check": "pré-processamento: treino (Resize256+CenterCrop224+Normalize) vs entrada 256 com recorte/normalização no modelo",
+      "ok": true,
+      "detail": "n=188, top-1 igual em 100.0%, max |Δprob|=0.00e+00, média=0.00e+00"
+    },
+    {
+      "check": "PyTorch vs TorchScript (grafo convertido)",
+      "ok": true,
+      "detail": "max |Δprob|=0.00e+00, top-1 igual em 100.0%"
+    },
+    {
+      "check": "reprodução de reports/val/predictions.csv (ambiente de conversão vs treino)",
+      "ok": true,
+      "detail": "max |Δprob|=4.97e-05 (CSV com 4 casas), accuracy val=0.8723"
+    },
+    {
+      "check": "Core ML: tipo de modelo",
+      "ok": true,
+      "detail": "mlProgram, specificationVersion=6"
+    },
+    {
+      "check": "Core ML: compatibilidade mínima iOS 15",
+      "ok": true,
+      "detail": "specificationVersion=6 (6 = iOS 15 / macOS 12)"
+    },
+    {
+      "check": "Core ML: entrada",
+      "ok": true,
+      "detail": "image: imagem 256x256 RGB"
+    },
+    {
+      "check": "Core ML: saídas",
+      "ok": true,
+      "detail": {
+        "classLabel": "stringType",
+        "classLabel_probs": "dictionaryType"
+      }
+    },
+    {
+      "check": "Core ML: rótulos do classificador na ordem do treino",
+      "ok": true,
+      "detail": [
+        "Abrasion",
+        "Bruise",
+        "Burn",
+        "Laceration",
+        "Normal Skin"
+      ]
+    },
+    {
+      "check": "Core ML: pesos em FP16",
+      "ok": true,
+      "detail": "opset=CoreML5, constantes por tipo={'FLOAT32': 1, 'INT32': 224, 'BOOL': 12, 'STRING': 54, 'FLOAT16': 185}"
+    },
+    {
+      "check": "Core ML: pré-processamento embutido no programa",
+      "ok": true,
+      "detail": "primeiras operações: ['mul', 'cast', 'slice_by_index', 'slice_by_index', 'sub', 'mul', 'conv', 'thresholded_relu']; conv=52, softmax=1, total=645 ops; escala da entrada=1/255 (ImageType)"
+    }
+  ],
+  "fp16_estimate_pytorch_half": {
+    "max_abs_diff_prob": 0.040782392024993896,
+    "top1_agreement": 0.9946808510638298
+  },
+  "coreml_runtime_inference": "NÃO executada: o runtime do Core ML só existe no macOS. Rode src/validate_coreml_macos.py em um Mac.",
+  "all_passed": true
+}

@@ -1,0 +1,188 @@
+path,true,pred,correct,screenshot_score,p_Abrasion,p_Bruise,p_Burn,p_Laceration,p_Normal Skin
+test/abrasion/images-2-_jpg.rf.21448ca11263206224981a285e612e94.jpg,Abrasion,Abrasion,1,0.0,0.7353,0.0176,0.0071,0.2385,0.0015
+train/abrasion/187569865-abrasiones-moretones-en-las-rodillas-de-un-adolescente-irreconocible-vida-de-los-adolescentes_jpg.rf.993958ac2aa87d112f6a9d7ab25f377e.jpg,Abrasion,Abrasion,1,0.0,0.9983,0.0003,0.0001,0.0014,0.0000
+train/abrasion/41046033-contusion-sangrienta-fresca-herida-en-la-rodilla_jpg.rf.ec65fe611925e0c69648ee77b83c2642.jpg,Abrasion,Abrasion,1,0.0,0.9999,0.0000,0.0000,0.0000,0.0000
+train/abrasion/59048213-la-sangre-que-aspira-del-mosquito-en-la-piel-humana-con-una-mancha-roja-Editado_jpg.rf.cf55f531114abba15f9a6bf05c56f5e0.jpg,Abrasion,Abrasion,1,0.0,0.5507,0.2495,0.0007,0.0963,0.1028
+train/abrasion/IMG20250609071559_jpg.rf.6bbc7fdf8da0458e0a298ad2fa4e7630.jpg,Abrasion,Normal Skin,0,0.0,0.0021,0.0471,0.0007,0.0637,0.8863
+train/abrasion/RASPON3_jpg.rf.79bf32d83989215b84f0c113afb78da1.jpg,Abrasion,Abrasion,1,0.646,0.8987,0.0194,0.0785,0.0027,0.0007
+train/abrasion/TC-02_webp.rf.654f168e4cdfbbc9225deeecf37c1b8c.jpg,Abrasion,Laceration,0,0.0,0.0491,0.0085,0.2948,0.5862,0.0615
+train/abrasion/depositphotos_196338142-stock-photo-wound-scabs-knee-woman_jpg.rf.d0c7d5c94051a670b97676175d72e3c3.jpg,Abrasion,Laceration,0,0.0,0.0369,0.0002,0.0002,0.9621,0.0006
+train/abrasion/depositphotos_230624868-stock-photo-scratch-skin-wound-cut-skin_jpg.rf.aab8d642c1106fd797872cd1226e872e.jpg,Abrasion,Abrasion,1,0.0,0.8059,0.0170,0.0508,0.0594,0.0668
+train/abrasion/images-29-_jpg.rf.60194e16fb5a0540420a9b1dd6f070ce.jpg,Abrasion,Abrasion,1,0.0,0.4683,0.0118,0.2044,0.3092,0.0063
+train/abrasion/images-49-_jpg.rf.f264491c5804cc3e39d408f45f78e8eb.jpg,Abrasion,Abrasion,1,0.0,0.4984,0.0029,0.0029,0.2057,0.2901
+train/abrasion/istockphoto-1093523256-1024x1024_jpg.rf.8ff463b1c3f2c2a3afe3f0fb696250cb.jpg,Abrasion,Normal Skin,0,0.0,0.0863,0.0054,0.0174,0.0014,0.8895
+train/abrasion/istockphoto-1433471813-612x612_jpg.rf.af3538878abc8e6db08aea927f5432aa.jpg,Abrasion,Abrasion,1,0.0,0.9966,0.0009,0.0006,0.0000,0.0019
+train/abrasion/istockphoto-824815068-612x612_jpg.rf.32d68298013d9614edb0190c106a7160.jpg,Abrasion,Abrasion,1,0.0,0.9932,0.0003,0.0051,0.0005,0.0009
+train/abrasion/shutterstock_146935271-300x200_jpg.rf.0a9de757ce1aeea4b7c511f268509125.jpg,Abrasion,Abrasion,1,0.0,0.5333,0.0020,0.0783,0.3736,0.0129
+test/bruise/bruise58_JPG.rf.114f15eb0f3e8d8c0db35f796258138c.jpg,Bruise,Burn,0,0.0,0.0903,0.3645,0.4621,0.0060,0.0771
+train/bruise/1497015179-bruise_jpg.rf.19847c8ecbb991e95375f01ffcbc0b67.jpg,Bruise,Bruise,1,0.0,0.0243,0.8841,0.0332,0.0329,0.0256
+train/bruise/Pferdekuss_jpg.rf.3238f445f5fbcf3b943709122192fc93.jpg,Bruise,Bruise,1,0.0,0.0070,0.9869,0.0039,0.0018,0.0004
+train/bruise/bruise100_jpg.rf.366bc141de7236ca11f584ee0e143fcc.jpg,Bruise,Bruise,1,0.0,0.0011,0.9902,0.0013,0.0001,0.0073
+train/bruise/bruise1_jpg.rf.78564ab7722ea8f2be8445281d3cdc7e.jpg,Bruise,Abrasion,0,0.0,0.4205,0.3310,0.0089,0.0003,0.2392
+train/bruise/bruise48_JPG.rf.d67928aa963f7b48464566b535762392.jpg,Bruise,Bruise,1,0.0,0.2441,0.6912,0.0369,0.0059,0.0219
+train/bruise/bruise4_jpg.rf.e39fcbea8cc0dd8c716cc5f5f08ae56f.jpg,Bruise,Bruise,1,0.0,0.0323,0.8510,0.0615,0.0441,0.0112
+train/bruise/bruise61_JPG.rf.933ba9fcac2fdfc7485df7cb6e87b9ed.jpg,Bruise,Bruise,1,0.0,0.0022,0.9976,0.0000,0.0001,0.0001
+train/bruise/images152_jpg.rf.8fc2c1630f2f0a8c7c0b72ecc3cc6fde.jpg,Bruise,Bruise,1,0.0,0.0059,0.9231,0.0385,0.0065,0.0260
+train/bruise/images244_jpg.rf.d9fcb27518b4ced4f771a1011a0d9997.jpg,Bruise,Bruise,1,1.0,0.1446,0.4278,0.4112,0.0095,0.0069
+train/bruise/images252_jpg.rf.35af39385b402a7ead57c1ac4e586333.jpg,Bruise,Bruise,1,0.0,0.3517,0.6202,0.0131,0.0107,0.0041
+train/bruise/images327_jpg.rf.d792656f3c4b2b61f45f7f1c41f2507d.jpg,Bruise,Bruise,1,0.0,0.0017,0.9012,0.0846,0.0122,0.0004
+train/bruise/images35_jpg.rf.fa31f56fe6c57bc6018e004c14a2028f.jpg,Bruise,Burn,0,0.0,0.0577,0.1362,0.5997,0.1668,0.0395
+train/bruise/images39_jpg.rf.32ee6723ed4fbb316da4240a5c8e4d89.jpg,Bruise,Bruise,1,0.0,0.4575,0.5407,0.0001,0.0013,0.0004
+train/bruise/images401_jpg.rf.de765beb1f7ced8d4d93af087d1810a8.jpg,Bruise,Bruise,1,0.0,0.0875,0.8927,0.0097,0.0015,0.0086
+train/bruise/images403_jpg.rf.6ec3c640833718390c4fd615589a9a3f.jpg,Bruise,Bruise,1,0.0,0.0007,0.9664,0.0104,0.0109,0.0115
+train/bruise/images43_jpg.rf.4454ddf33e75dc29a0c92b5d97e0cfe8.jpg,Bruise,Bruise,1,0.0,0.0047,0.9931,0.0020,0.0002,0.0000
+train/bruise/images446_jpg.rf.9d0e6579a5cb060c15286fd53c4f8055.jpg,Bruise,Bruise,1,0.271,0.0712,0.5637,0.2900,0.0542,0.0209
+train/bruise/images455_jpg.rf.670cf587071281a0c539ba934083e69f.jpg,Bruise,Bruise,1,0.0,0.0063,0.7981,0.1515,0.0031,0.0410
+train/bruise/images526_jpg.rf.c641860762e82e4e5b1f155051ef1710.jpg,Bruise,Bruise,1,0.0,0.1295,0.7139,0.0404,0.0603,0.0559
+train/bruise/images552_jpg.rf.192f41c131710bb98e1074cba08f41f9.jpg,Bruise,Bruise,1,0.0,0.0884,0.8215,0.0775,0.0024,0.0103
+train/bruise/images650_jpg.rf.4943a1b6c337aac9acf11c3407b41ba7.jpg,Bruise,Bruise,1,0.0,0.0240,0.9711,0.0042,0.0002,0.0005
+train/bruise/images652_jpg.rf.16f527a7a2ba299fd90731255d6507e0.jpg,Bruise,Normal Skin,0,0.0,0.3001,0.2094,0.0458,0.1173,0.3274
+train/bruise/images687_jpg.rf.ab2b40292b5ff62fbac39180ad947226.jpg,Bruise,Bruise,1,0.0,0.0068,0.9891,0.0028,0.0011,0.0001
+train/bruise/images764_jpg.rf.b5cc9498ae190cfaca51cde53d9c8bb8.jpg,Bruise,Bruise,1,0.0,0.0923,0.5169,0.1612,0.0212,0.2084
+train/bruise/images765_jpg.rf.1a8969968ca9c261aa1058ac7296c4e9.jpg,Bruise,Bruise,1,0.0,0.0010,0.9951,0.0029,0.0001,0.0010
+train/bruise/images774_jpg.rf.c7d73f6d65ff3e115355739725fc0718.jpg,Bruise,Bruise,1,0.0,0.0242,0.9295,0.0415,0.0021,0.0027
+train/bruise/images91_jpg.rf.c1d7adbe8b756d41237b80da1522fdcc.jpg,Bruise,Burn,0,0.125,0.2820,0.0072,0.6753,0.0253,0.0103
+valid/bruise/images475_jpg.rf.110212c113701945f40997845ecf52a9.jpg,Bruise,Bruise,1,0.0,0.0016,0.9859,0.0100,0.0011,0.0014
+test/burn/IMG-20231230-WA0067_jpg.rf.b93f6a69e4af444bce4ef4a9946f4ef8.jpg,Burn,Burn,1,0.688,0.0120,0.0057,0.9618,0.0183,0.0023
+train/burn/Capture-d-ecran-2024-05-09-221434_png_jpg.rf.0083a673f1102f661c2f2aaad6c931e0.jpg,Burn,Burn,1,0.0,0.0165,0.0329,0.9409,0.0012,0.0085
+train/burn/IMG-20231230-WA0008_jpg.rf.2fec7713ee74ca7b1902202085de1c8e.jpg,Burn,Burn,1,0.0,0.0616,0.0063,0.8687,0.0596,0.0038
+train/burn/IMG-20231230-WA0008_jpg.rf.45e6396cf62b449321734425fbf09886.jpg,Burn,Laceration,0,0.0,0.1251,0.0014,0.2604,0.6076,0.0055
+train/burn/IMG-20231230-WA0010_jpg.rf.7507b0627b494f87d7b9983c70c4eba4.jpg,Burn,Laceration,0,0.0,0.0265,0.0021,0.2482,0.7191,0.0040
+train/burn/IMG-20231230-WA0026_jpg.rf.4c5f52a4efa5274c6e1e6d7fc809e4a8.jpg,Burn,Burn,1,0.0,0.0555,0.1928,0.6369,0.0060,0.1088
+train/burn/IMG-20231230-WA0027_jpg.rf.65c2600431667299815420e108509f4c.jpg,Burn,Burn,1,0.0,0.0420,0.0150,0.9352,0.0057,0.0021
+train/burn/IMG-20231230-WA0032_jpg.rf.60fb450d05ebf6c34e5df1f4fa8f217f.jpg,Burn,Burn,1,0.0,0.0509,0.0057,0.9205,0.0078,0.0152
+train/burn/IMG-20231230-WA0045_jpg.rf.eabcbfe063873b604da0bcee24f8e6e4.jpg,Burn,Burn,1,0.0,0.0029,0.0001,0.9954,0.0002,0.0014
+train/burn/IMG-20231230-WA0050_jpg.rf.e911cc97795061f96293e6e193a1996d.jpg,Burn,Burn,1,0.646,0.0132,0.0022,0.9829,0.0010,0.0006
+train/burn/IMG-20231230-WA0071_jpg.rf.3a4f572fc94b0a66d4a506262bf7545f.jpg,Burn,Laceration,0,0.0,0.0971,0.0492,0.2955,0.4938,0.0644
+train/burn/IMG-20231230-WA0112_jpg.rf.0325f82e6c97ff70c07d21f30a3930bd.jpg,Burn,Burn,1,0.042,0.0612,0.0269,0.8342,0.0048,0.0730
+train/burn/M3350134_jpg.rf.2ccb484fe82c392af433576f3c7085b4.jpg,Burn,Abrasion,0,0.0,0.9977,0.0001,0.0011,0.0011,0.0000
+train/burn/burn_0579_jpg.rf.4b15f69d593a903592cea31326b50d86.jpg,Burn,Burn,1,0.0,0.2099,0.0287,0.7610,0.0001,0.0003
+train/burn/depositphotos_13283354-stock-photo-severe-burns_jpg.rf.9f323f2e11185668494169693938de39.jpg,Burn,Burn,1,0.0,0.2183,0.0531,0.6716,0.0518,0.0052
+train/burn/deuc_jpg.rf.14909adeaa25b87a4e3f5c201ed9da3a.jpg,Burn,Burn,1,0.0,0.0141,0.1460,0.7670,0.0241,0.0487
+train/burn/first_jpg.rf.a255fa00a6ffff7edd56cbcf4f8318e5.jpg,Burn,Laceration,0,0.0,0.0532,0.0053,0.0055,0.9282,0.0077
+train/burn/image5_jpg.rf.6034936ab36e9ab0251098d0be052cb6.jpg,Burn,Burn,1,0.0,0.1063,0.0009,0.6424,0.2484,0.0021
+train/burn/img1136_jpg.rf.62ccb80ca40e4676f57dd8b924475492.jpg,Burn,Burn,1,0.0,0.0262,0.3404,0.5737,0.0064,0.0533
+train/burn/img412_jpg.rf.36e0f3d879bb5b3464059c957f242318.jpg,Burn,Abrasion,0,0.0,0.4480,0.1995,0.3368,0.0128,0.0028
+train/burn/img838_jpg.rf.1a79410e1c16b0d39dee9e1547e61507.jpg,Burn,Burn,1,0.0,0.0877,0.0632,0.8281,0.0064,0.0146
+train/burn/img886_jpg.rf.8ccf9cc9eae02045ee8dc4b8609d4e30.jpg,Burn,Burn,1,0.5,0.0543,0.0209,0.7993,0.0720,0.0535
+train/burn/istockphoto-477832087-612x612_jpg.rf.57be7348cf7e15b338a7de8d3376e001.jpg,Burn,Burn,1,0.0,0.1817,0.0032,0.7767,0.0308,0.0076
+train/burn/patient-on-table-just-before-the-first-operation-mummified-right-hand-and-distal_jpg.rf.798dd188a321345535ae377cc4beb9a7.jpg,Burn,Abrasion,0,0.0,0.6954,0.0690,0.1405,0.0308,0.0643
+train/burn/third_jpg.rf.b78d420a6228c5f1059123625091ca6b.jpg,Burn,Abrasion,0,0.0,0.6620,0.0032,0.3293,0.0046,0.0009
+test/laceration/141_jpg.rf.9f43977074d9728935b340ea392689bf.jpg,Laceration,Laceration,1,0.0,0.0026,0.0002,0.0001,0.9971,0.0000
+test/laceration/165_jpg.rf.5052e0d6366990e19fddde3bb3653885.jpg,Laceration,Laceration,1,0.0,0.0024,0.0013,0.0016,0.9923,0.0024
+test/laceration/Cut-3-_jpg.rf.0fd930d61b998ccf3b426cd53ce8dbb6.jpg,Laceration,Abrasion,0,0.0,0.5170,0.1608,0.0143,0.3077,0.0002
+test/laceration/cut-29-_jpg.rf.90bf8a887249fddcfde33f67e75253ae.jpg,Laceration,Bruise,0,0.0,0.0364,0.7416,0.0031,0.2118,0.0072
+train/laceration/0197_jpg.rf.999e389bce9ae56a18705fe16f5c1a94.jpg,Laceration,Laceration,1,0.0,0.2955,0.0085,0.1617,0.5238,0.0106
+train/laceration/120_jpg.rf.d10b26b0d22dc45fc986418d4a8e221c.jpg,Laceration,Laceration,1,0.0,0.0021,0.0329,0.0014,0.9581,0.0055
+train/laceration/122_jpg.rf.59af9e760e4443561eab2b8cba3dd9e9.jpg,Laceration,Laceration,1,0.0,0.0039,0.0006,0.0064,0.9819,0.0072
+train/laceration/126_jpg.rf.a0e05b77ee7b0b60af08d54e3285dfc3.jpg,Laceration,Laceration,1,0.0,0.0437,0.0463,0.0975,0.8019,0.0106
+train/laceration/139_jpg.rf.7a60534c7187553d3689e6c815fb4d2d.jpg,Laceration,Laceration,1,0.0,0.0063,0.0076,0.0008,0.9815,0.0038
+train/laceration/155_jpg.rf.5b3b6e60aade40ef666f6934d24a85d9.jpg,Laceration,Laceration,1,0.0,0.0871,0.0036,0.0025,0.8990,0.0079
+train/laceration/156_jpg.rf.9351d011322481ae797281fdcc4531bc.jpg,Laceration,Normal Skin,0,0.0,0.0240,0.0857,0.1416,0.3023,0.4463
+train/laceration/157_jpg.rf.1a342287277107f62e76786b6a831404.jpg,Laceration,Laceration,1,0.0,0.0079,0.0085,0.0089,0.9521,0.0227
+train/laceration/173_jpg.rf.a69b38b4eec7356faac0db4fb7ef0432.jpg,Laceration,Laceration,1,0.0,0.0374,0.0061,0.0514,0.7053,0.1998
+train/laceration/187_jpg.rf.58c2f8db45fae8f55ef65a479e96298b.jpg,Laceration,Laceration,1,0.0,0.0099,0.0029,0.0028,0.9837,0.0008
+train/laceration/189_jpg.rf.4c2cea48ffab4860900c1ab2ba2c0de4.jpg,Laceration,Laceration,1,0.0,0.0112,0.0073,0.0025,0.9712,0.0079
+train/laceration/207_jpg.rf.ea21ea23631a71b98d362bf14d22da86.jpg,Laceration,Laceration,1,0.0,0.2363,0.0243,0.0468,0.6394,0.0531
+train/laceration/213_jpg.rf.350ffb014439803606fdef760f04b09b.jpg,Laceration,Abrasion,0,0.0,0.3711,0.0082,0.0496,0.3137,0.2574
+train/laceration/237_jpg.rf.b02a8a5b7d6881b9f9466ed2e2ddf287.jpg,Laceration,Laceration,1,0.0,0.1321,0.1395,0.0098,0.5748,0.1438
+train/laceration/278_jpg.rf.8afeb746c197338a4420ff9810b6dd66.jpg,Laceration,Laceration,1,0.0,0.0256,0.0100,0.0271,0.9141,0.0232
+train/laceration/282_jpg.rf.2c6946bb25bef2dd1d465096ec5204c1.jpg,Laceration,Abrasion,0,0.0,0.4823,0.0527,0.0261,0.3542,0.0847
+train/laceration/436_jpg-list1x_png.rf.9a7d27b5b19ae8dd1bdee0da155960c9.jpg,Laceration,Laceration,1,0.0,0.1229,0.2824,0.0181,0.3324,0.2442
+train/laceration/a404f10712812e1f1991af93dcd14c27_jpg.rf.e8781c4e563f838f7107f21746c77058.jpg,Laceration,Abrasion,0,0.0,0.5364,0.0105,0.0002,0.4479,0.0050
+train/laceration/cut-21-_jpg.rf.d50ca558f826b34d1af3b397ee586685.jpg,Laceration,Laceration,1,0.0,0.0371,0.0204,0.0301,0.9001,0.0123
+train/laceration/cut-43-_jpg.rf.2a2d9f743336f40acdba00346f8b66d3.jpg,Laceration,Abrasion,0,0.0,0.9639,0.0011,0.0262,0.0066,0.0022
+train/laceration/uho_news_045741_jpg.rf.074ceff67117ab56b9b5120f5499de6a.jpg,Laceration,Abrasion,0,0.0,0.5866,0.0002,0.0385,0.3422,0.0325
+valid/laceration/132_jpg.rf.c2c1d86fe0ae91f903b831e4c92a1822.jpg,Laceration,Bruise,0,0.0,0.0872,0.3158,0.2377,0.1148,0.2446
+valid/laceration/170072428-human-finger-with-a-cut-a-consequence-of-skin-damage-and-open-bleeding-from-a-scratch-on-the-patient_jpg.rf.a1e7eb55b7b56c93d98625a51ccb6263.jpg,Laceration,Laceration,1,0.0,0.0264,0.0005,0.0006,0.9720,0.0005
+valid/laceration/226_jpg.rf.f51049f66e6d37061622afee2bc94f29.jpg,Laceration,Laceration,1,0.0,0.0105,0.0004,0.0014,0.9869,0.0008
+valid/laceration/cut-10-_jpg.rf.97867938a1efa5384fdaeed5670f8e73.jpg,Laceration,Normal Skin,0,0.0,0.0943,0.1370,0.1822,0.2153,0.3712
+test/normal skin/1000_F_431352648_03eETTYuIdDnt8lqKH5Tg6Za8TqD3nqt_jpg.rf.ba623a254ce6b1599c322cf51cf9d32d.jpg,Normal Skin,Normal Skin,1,0.0,0.0069,0.0003,0.0001,0.0002,0.9925
+test/normal skin/YYeDYEjQbG8_jpg.rf.e239be2b225b602c2978d5f95f089bf1.jpg,Normal Skin,Normal Skin,1,0.0,0.0120,0.0250,0.0172,0.0362,0.9096
+test/normal skin/depositphotos_126591580-stock-photo-macro-of-texture-human-skin_jpg.rf.dc4a90fd56ee1bea1071f3651630e57a.jpg,Normal Skin,Normal Skin,1,0.0,0.0325,0.0113,0.0026,0.0163,0.9373
+test/normal skin/depositphotos_24782809-stock-photo-detailed-skin_jpg.rf.8362ee1fe0840868801b422462cfea95.jpg,Normal Skin,Normal Skin,1,0.0,0.0375,0.0173,0.0155,0.0103,0.9194
+test/normal skin/depositphotos_493235638-stock-photo-detailed-texture-aging-dry-human_jpg.rf.b59bf734855cbfb3e2833ba45dca5ac4.jpg,Normal Skin,Normal Skin,1,0.0,0.0072,0.0069,0.0006,0.0060,0.9793
+test/normal skin/eWB_7wFpcLM_jpg.rf.e054a80726728204e9a53314abaa262c.jpg,Normal Skin,Normal Skin,1,0.0,0.0080,0.0174,0.0106,0.0086,0.9554
+test/normal skin/front-view-young-man-posing-studio_jpg.rf.23191412aeaa3ba589278f87a7a88055.jpg,Normal Skin,Normal Skin,1,0.0,0.1938,0.0069,0.0066,0.0054,0.7873
+train/normal skin/0lX-sYeppb0_jpg.rf.fb67d9a94c41a2bff2aa5e2d4a7663f5.jpg,Normal Skin,Normal Skin,1,0.0,0.0736,0.0205,0.0065,0.0216,0.8778
+train/normal skin/1-1-59_6128b3f32ba4b_jpg.rf.0c3f0cf96eff696baa88951f63e45336.jpg,Normal Skin,Normal Skin,1,0.0,0.0946,0.0034,0.0136,0.0054,0.8830
+train/normal skin/1000_F_133356770_Ra73cUAATgQBXTsrtaWihpuFCDPXSQ1k_jpg.rf.04d2ee9dca864face53067dbb1627241.jpg,Normal Skin,Normal Skin,1,0.0,0.0118,0.0088,0.0004,0.0038,0.9752
+train/normal skin/1000_F_211781731_aWrU9JCLKfiEhj9tkt6PxWmITIECcs63_jpg.rf.67ce6a4358d1581565e0a1c3a3b99a54.jpg,Normal Skin,Normal Skin,1,0.0,0.0405,0.0045,0.0021,0.0046,0.9484
+train/normal skin/1000_F_320811926_5n3phFK2P4PolZj6zrAMLkyLl1sQtEIo_jpg.rf.8c4277dabb0008079ba0ec43fc6ee7d9.jpg,Normal Skin,Burn,0,0.0,0.1889,0.0564,0.6233,0.0076,0.1238
+train/normal skin/1000_F_331136144_1KcaHTlUjfuO47G3oXok4bB0XelGatTR_jpg.rf.524cdeded8fdb21aa144a398398b09f5.jpg,Normal Skin,Normal Skin,1,0.0,0.1756,0.2389,0.0815,0.1008,0.4032
+train/normal skin/1000_F_369109687_uzkS6MhwA68NFzIB9mI3ph4Tg3qu59Oq_jpg.rf.4ad6f91476f892cd001b0530c26a00fd.jpg,Normal Skin,Normal Skin,1,0.0,0.2141,0.0320,0.0974,0.0400,0.6164
+train/normal skin/1000_F_434277134_DFlfeNmbgbFfDEQ00ZbuuMF5mlGxerKh_jpg.rf.5cf1e0eac25fdfcf9cffa58084ff2240.jpg,Normal Skin,Normal Skin,1,0.0,0.0528,0.0634,0.0041,0.0198,0.8599
+train/normal skin/1000_F_439577515_XUX2tT274OdYyH2C8eZ3C4nWpG7ZPdkn_jpg.rf.bfcff25723926b2ecd2266cabc721317.jpg,Normal Skin,Normal Skin,1,0.0,0.0498,0.0025,0.0118,0.0129,0.9230
+train/normal skin/1000_F_454083010_9VTLyPWvwaFOECvXryfeJje0yEElb08i_jpg.rf.d59ec87f0cb89a41569d273ac34b54bb.jpg,Normal Skin,Normal Skin,1,0.0,0.0024,0.0018,0.0017,0.0014,0.9928
+train/normal skin/1000_F_632848874_BBRgq82cXMFKzrL0S9G4geBB8B2IPHxN_jpg.rf.2fe0cffcfb68c01c50408d6f3185e743.jpg,Normal Skin,Normal Skin,1,0.0,0.1097,0.0020,0.0062,0.0090,0.8730
+train/normal skin/118_jpg.rf.48694e23459fb4587b77f3cd7564228d.jpg,Normal Skin,Normal Skin,1,0.0,0.0302,0.0126,0.0146,0.0288,0.9136
+train/normal skin/121_bright_jpg.rf.6ca54dc3b53248416d29ce3265b92dab.jpg,Normal Skin,Normal Skin,1,0.0,0.0226,0.0180,0.0032,0.0209,0.9353
+train/normal skin/12_bright_jpg.rf.41c79d2fe1233253bb51625c7b6ece67.jpg,Normal Skin,Normal Skin,1,0.0,0.0444,0.0363,0.0027,0.0163,0.9004
+train/normal skin/15_bright_jpg.rf.ce1d5a72517b0136e357d4feeb0467d2.jpg,Normal Skin,Normal Skin,1,0.0,0.0310,0.0142,0.0110,0.0136,0.9302
+train/normal skin/170_bright_jpg.rf.1368f020cd4fcc9b377cd9b6a0b9c61e.jpg,Normal Skin,Normal Skin,1,0.0,0.0278,0.0125,0.0060,0.0241,0.9295
+train/normal skin/22_bright_jpg.rf.6600327cb2360edd3747a1997be6ac46.jpg,Normal Skin,Normal Skin,1,0.0,0.0183,0.0266,0.0045,0.0144,0.9362
+train/normal skin/24241-shutterstock_183177686jpg_jpg.rf.37ba72cd361d65a2854ace2636038d20.jpg,Normal Skin,Normal Skin,1,0.0,0.0016,0.0017,0.0051,0.0020,0.9896
+train/normal skin/4-11_jpg.rf.b10f714223e652b7d9f563e09e9846c5.jpg,Normal Skin,Normal Skin,1,0.0,0.0434,0.2499,0.0889,0.0220,0.5958
+train/normal skin/4-26_jpg.rf.9f466a02008fbf997d7c15d6cd27de87.jpg,Normal Skin,Normal Skin,1,0.0,0.0400,0.1010,0.0318,0.1100,0.7172
+train/normal skin/5ae7726cbd967137008b46cd_jpg.rf.91c2157f9e4751fb3eca92319c7c921b.jpg,Normal Skin,Normal Skin,1,0.0,0.0147,0.0729,0.0152,0.0037,0.8935
+train/normal skin/DHS_Skin_Texture_17_jpg.rf.eecbe73b59dafce7c43a9f2546630908.jpg,Normal Skin,Normal Skin,1,0.0,0.0560,0.1850,0.0492,0.0019,0.7079
+train/normal skin/EUC-INT-ph5-2017_SC_dry-sensitive-body-skin_04_jpg.rf.5f62aaa350b7dc5b85aaddeb89bdb89e.jpg,Normal Skin,Normal Skin,1,0.0,0.0204,0.0216,0.0933,0.1360,0.7287
+train/normal skin/H3qb5Cek3Bg_jpg.rf.a72388824dbae4b1a968a2dacaa24698.jpg,Normal Skin,Normal Skin,1,0.0,0.0095,0.0029,0.0117,0.0261,0.9497
+train/normal skin/How-Much-Does-Male-Neck-Lift-Cost-Torrance-400x264_jpg.rf.bd1b14705334ff43bdc135de0f6887ad.jpg,Normal Skin,Normal Skin,1,0.0,0.0829,0.1672,0.0509,0.0222,0.6768
+train/normal skin/What-Is-Skin-Texture_jpg.rf.7dda7c317d67e04a5194877668959cf3.jpg,Normal Skin,Normal Skin,1,0.0,0.0546,0.3875,0.0047,0.0010,0.5522
+train/normal skin/angelica-echeverry-5KY5LP_zc44-unsplash_jpg.rf.c238f0fae76377a478db27cc0e1c63a4.jpg,Normal Skin,Normal Skin,1,0.0,0.0185,0.0543,0.0270,0.1616,0.7386
+train/normal skin/cBclN_M3WFA_jpg.rf.9e0c96b9ce44c36ed0b6fda2fab47607.jpg,Normal Skin,Normal Skin,1,0.0,0.0126,0.0126,0.0019,0.0108,0.9620
+train/normal skin/close-up-face-pores-texture-2-_jpg.rf.b4ba2acc1073481fe4e479b701124bf6.jpg,Normal Skin,Normal Skin,1,0.0,0.0014,0.0053,0.0002,0.0002,0.9928
+train/normal skin/close-up-face-pores-texture_jpg.rf.24767893b299c30c6974674c598375f7.jpg,Normal Skin,Normal Skin,1,0.0,0.0385,0.0615,0.0022,0.0034,0.8944
+train/normal skin/contentImage_jpg.rf.64b206531ad12487cc3da6cbd759ca2a.jpg,Normal Skin,Normal Skin,1,0.0,0.0006,0.0030,0.0020,0.0006,0.9938
+train/normal skin/depositphotos_13379809-stock-photo-stretch-marks-macro_jpg.rf.fd8b3de8030e88d5a5aceaf1719e3420.jpg,Normal Skin,Normal Skin,1,0.0,0.0092,0.0087,0.0026,0.0064,0.9730
+train/normal skin/depositphotos_167029316-stock-photo-skin-with-acne-scars_jpg.rf.06ccd0469aa60944b4d75186919b35c8.jpg,Normal Skin,Normal Skin,1,0.0,0.0188,0.0334,0.0048,0.0256,0.9173
+train/normal skin/depositphotos_18084249-stock-photo-human-skin_jpg.rf.764c429691e04b04a124bac26fb02d4e.jpg,Normal Skin,Normal Skin,1,0.0,0.0213,0.0067,0.0020,0.0095,0.9605
+train/normal skin/depositphotos_193337712-stock-photo-texture-of-human-skin-closeup_jpg.rf.4401d77f78855ad69b065faec3bf19c2.jpg,Normal Skin,Normal Skin,1,0.0,0.0701,0.0142,0.0098,0.0395,0.8663
+train/normal skin/depositphotos_220079046-stock-photo-human-skin-texture-various-parts_jpg.rf.9fe89ccd565ab93618c09394f45ca9cc.jpg,Normal Skin,Normal Skin,1,0.0,0.0100,0.0087,0.0014,0.0093,0.9707
+train/normal skin/depositphotos_243811600-stock-photo-texture-background-of-flat-human_jpg.rf.68e74ceed07883171a68545e18b6b380.jpg,Normal Skin,Normal Skin,1,0.0,0.0163,0.0076,0.0047,0.0114,0.9599
+train/normal skin/depositphotos_251045312-stock-photo-pig-skin-as-a-background_jpg.rf.a1a55f7256446afa967eebc94c41eb80.jpg,Normal Skin,Normal Skin,1,0.0,0.0140,0.0049,0.0047,0.0053,0.9710
+train/normal skin/depositphotos_266841998-stock-photo-knee-skin-asia-woman-for_jpg.rf.d4bcbccd9ef8c601da44f31f97f9cc6f.jpg,Normal Skin,Bruise,0,0.0,0.0039,0.5843,0.0003,0.0003,0.4112
+train/normal skin/depositphotos_28977749-stock-photo-strong-sunburn-skin_jpg.rf.13834b0c6d5768399c9ff76b2949f74f.jpg,Normal Skin,Normal Skin,1,0.0,0.0464,0.0356,0.1744,0.0288,0.7148
+train/normal skin/depositphotos_30834935-stock-photo-varicose-veins-on-the-skin_jpg.rf.80cc3eb38b85d73b0ce3afedcc2ef114.jpg,Normal Skin,Normal Skin,1,0.0,0.0406,0.0740,0.0082,0.0068,0.8705
+train/normal skin/depositphotos_31774931-stock-photo-hand-background_jpg.rf.956f9aba5ebfa2ed743f724c6f4c60e3.jpg,Normal Skin,Normal Skin,1,0.0,0.1753,0.0142,0.0038,0.0097,0.7970
+train/normal skin/depositphotos_32998545-stock-photo-background_jpg.rf.a05f6459b0ecbbc09485694e5e79ebed.jpg,Normal Skin,Normal Skin,1,0.0,0.0152,0.0293,0.0041,0.0310,0.9205
+train/normal skin/depositphotos_335123184-stock-photo-texture-human-skin-freckles-age_jpg.rf.d1592072cef83cfb91e6a9b1c456a045.jpg,Normal Skin,Normal Skin,1,0.0,0.0286,0.0360,0.0126,0.0123,0.9104
+train/normal skin/depositphotos_35017509-stock-photo-background_jpg.rf.7d794e6a537ea3005e02f96551ea0237.jpg,Normal Skin,Normal Skin,1,0.0,0.0090,0.0022,0.0008,0.0084,0.9797
+train/normal skin/depositphotos_35019501-stock-photo-background_jpg.rf.8221310cd101b5aba8d8272fd5b0655f.jpg,Normal Skin,Normal Skin,1,0.0,0.0090,0.0098,0.0010,0.0111,0.9691
+train/normal skin/depositphotos_360299222-stock-photo-hydrated-skin-details-texture-epidermis_jpg.rf.1ed43ae9c9a6bc4da6bd759b9c285e69.jpg,Normal Skin,Normal Skin,1,0.0,0.0198,0.0143,0.0139,0.0042,0.9478
+train/normal skin/depositphotos_360302702-stock-photo-details-texture-skin-caucasian-woman_jpg.rf.c11f6714f600295aa5e096d7bc1d6e96.jpg,Normal Skin,Normal Skin,1,0.0,0.0089,0.0004,0.0001,0.0005,0.9902
+train/normal skin/depositphotos_360543500-stock-photo-extreme-close-skin-human-suffering_jpg.rf.17cffcbad998fd377a329c874a094c30.jpg,Normal Skin,Normal Skin,1,0.0,0.0326,0.0985,0.0031,0.0029,0.8628
+train/normal skin/depositphotos_381987936-stock-photo-cellulite-closeup-mature-woman-skin_jpg.rf.5ea0d944dd4a3f5a5b406eb3d0305ccc.jpg,Normal Skin,Normal Skin,1,0.0,0.0195,0.0207,0.0325,0.0087,0.9186
+train/normal skin/depositphotos_416000228-stock-photo-texture-pigskin-background-smoked-pork_jpg.rf.e555218f957a48688dbb425d2b69c1a8.jpg,Normal Skin,Normal Skin,1,0.0,0.0452,0.0129,0.0065,0.0101,0.9253
+train/normal skin/depositphotos_444540862-stock-photo-blur-epidermis-foot-skin-health_jpg.rf.b9c6abed462b3ec43936a7ac39e2306c.jpg,Normal Skin,Normal Skin,1,0.0,0.0040,0.0032,0.0014,0.0015,0.9899
+train/normal skin/depositphotos_470304676-stock-photo-white-clean-skin-background-macro_jpg.rf.0ef4f9e15075ef048237f454ba424a6d.jpg,Normal Skin,Normal Skin,1,0.0,0.0232,0.0119,0.0030,0.0042,0.9577
+train/normal skin/depositphotos_504779938-stock-photo-hand-old-woman-close-macro_jpg.rf.327f3b9e202147e68993012cc2730215.jpg,Normal Skin,Normal Skin,1,0.0,0.0149,0.0186,0.0140,0.0053,0.9473
+train/normal skin/depositphotos_530612832-stock-photo-dried-skin-had-palm-macro_jpg.rf.5fc8513743f5e99a01087f6fa00fae57.jpg,Normal Skin,Normal Skin,1,0.0,0.0985,0.0032,0.0030,0.0166,0.8787
+train/normal skin/depositphotos_581707350-stock-photo-macro-human-skin-texture-person_jpg.rf.aabaa01dd7db3fabcadb15a423fe270f.jpg,Normal Skin,Normal Skin,1,0.0,0.0091,0.0041,0.0004,0.0015,0.9848
+train/normal skin/eminence-organics-healthy-skin-tips_jpg.rf.2834e8cc33173e376710303ddaa51da1.jpg,Normal Skin,Normal Skin,1,0.0,0.0058,0.0025,0.0036,0.0379,0.9502
+train/normal skin/hMBJ2bLRGw8_jpg.rf.81a665d537fa581e6bf605d923369aff.jpg,Normal Skin,Normal Skin,1,0.0,0.0173,0.0591,0.3363,0.0093,0.5781
+train/normal skin/iMmTNhl0cJ0_jpg.rf.de43fae69ea447fcdbf69b26081ad63a.jpg,Normal Skin,Normal Skin,1,0.0,0.0235,0.0629,0.0128,0.0017,0.8991
+train/normal skin/image1-1_png.rf.eb57c20d91c1da6193e899c1d0dd1e08.jpg,Normal Skin,Normal Skin,1,0.0,0.0207,0.0098,0.0010,0.0149,0.9536
+train/normal skin/images-12-_jpg.rf.2c9ac2ac4f577078738ff69076d30607.jpg,Normal Skin,Normal Skin,1,0.0,0.0516,0.0162,0.0285,0.0036,0.9001
+train/normal skin/images-15-_jpg.rf.5e9fa31f04872e655b61dcffd13b4c43.jpg,Normal Skin,Normal Skin,1,0.0,0.0160,0.0127,0.0027,0.0390,0.9296
+train/normal skin/images-22-_jpg.rf.8e2231730541107f8a4ce7922f5ac22d.jpg,Normal Skin,Normal Skin,1,0.0,0.0270,0.0978,0.0817,0.0173,0.7762
+train/normal skin/images-7-_jpg.rf.956159c72db248d3d811e66f62b48cd6.jpg,Normal Skin,Normal Skin,1,0.0,0.0214,0.0107,0.0321,0.0164,0.9193
+train/normal skin/images-8-_jpg.rf.e01937c20d3a17a4f0f51604a16e85ee.jpg,Normal Skin,Normal Skin,1,0.0,0.0285,0.0041,0.0287,0.0037,0.9349
+train/normal skin/male-grooming_jpg.rf.2dc4b3833ee31c34f2454bd2f54b232c.jpg,Normal Skin,Normal Skin,1,0.0,0.0005,0.0015,0.0001,0.0016,0.9963
+train/normal skin/maxresdefault_jpg.rf.fc0e7d43c010638ae3576effb9d832d0.jpg,Normal Skin,Normal Skin,1,0.0,0.0501,0.0155,0.0225,0.0182,0.8938
+train/normal skin/qqUGcnRB6mc_jpg.rf.514c94a7808175fa3176e4b941403bc9.jpg,Normal Skin,Normal Skin,1,0.0,0.0153,0.0048,0.0033,0.0109,0.9658
+train/normal skin/r3v1aBoZPp0_jpg.rf.a549f55fec8aa329e4a51d7827a7af78.jpg,Normal Skin,Normal Skin,1,0.0,0.0033,0.0170,0.0028,0.0117,0.9652
+train/normal skin/skin-care_jpg.rf.278bf90923f73b522451ecdd064853f4.jpg,Normal Skin,Normal Skin,1,0.0,0.0068,0.0007,0.0002,0.0007,0.9917
+train/normal skin/tDox0xp1yR4_jpg.rf.1c193193c5f262b7283e6a0d3aecbd8b.jpg,Normal Skin,Normal Skin,1,0.0,0.0262,0.0004,0.0049,0.0001,0.9683
+train/normal skin/tGmnRLa2bIg_jpg.rf.e254c010453e032e738d7fa28683e15d.jpg,Normal Skin,Normal Skin,1,0.0,0.0271,0.0287,0.0016,0.0364,0.9062
+train/normal skin/tai-xuong_jpg.rf.1ce6f21a216fc4ab5334862e45b6fff8.jpg,Normal Skin,Normal Skin,1,0.0,0.1186,0.1092,0.1447,0.0013,0.6261
+train/normal skin/vUAICbBVrZE_jpg.rf.fb0ff58117f56b2936cdc243af51baa1.jpg,Normal Skin,Normal Skin,1,0.0,0.0035,0.0116,0.0005,0.0021,0.9822
+train/normal skin/woman-healthy-skin_jpg.rf.e581201ea7646bf2d78b292b5966d966.jpg,Normal Skin,Normal Skin,1,0.0,0.0055,0.0019,0.0024,0.0027,0.9875
+valid/normal skin/109_jpg.rf.78771488183e2f94efa24b7a114b2a06.jpg,Normal Skin,Normal Skin,1,0.0,0.0259,0.0237,0.0113,0.0251,0.9139
+valid/normal skin/138_bright_jpg.rf.253ce409e3bca873c153b4ff33a368d3.jpg,Normal Skin,Normal Skin,1,0.0,0.0228,0.0029,0.0009,0.0146,0.9588
+valid/normal skin/QU9nSAK0VVg_jpg.rf.59037e5575adeaa1c1b83769b62e0fdb.jpg,Normal Skin,Normal Skin,1,0.0,0.0080,0.0015,0.0181,0.0076,0.9648
+valid/normal skin/anna-tarazevich-HX3MOurRLPE-unsplash_jpg.rf.b1c68e15391ffd2a167985287d52d840.jpg,Normal Skin,Burn,0,0.0,0.1873,0.0109,0.7327,0.0284,0.0407
+valid/normal skin/depositphotos_322454866-stock-photo-stretch-marks-on-the-skin_jpg.rf.b42e9ea1c4e68e5b353232e2b1778858.jpg,Normal Skin,Normal Skin,1,0.0,0.0369,0.3176,0.0069,0.0224,0.6161
+valid/normal skin/depositphotos_482385718-stock-photo-macro-photo-of-a-human_jpg.rf.45a2010583f16053ca4a4b50f05a2f09.jpg,Normal Skin,Normal Skin,1,0.0,0.0427,0.0057,0.0157,0.0309,0.9050
+valid/normal skin/depositphotos_494045760-stock-photo-human-skin-macro-photography_jpg.rf.a6580fc7417ea89a39bda1b9cb5080e7.jpg,Normal Skin,Normal Skin,1,0.0,0.0014,0.0007,0.0001,0.0003,0.9975

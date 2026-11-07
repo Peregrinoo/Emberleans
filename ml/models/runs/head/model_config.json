@@ -1,0 +1,64 @@
+{
+  "architecture": "torchvision.models.mobilenet_v3_small",
+  "pretrained": "ImageNet1K_V1 (mobilenet_v3_small-047dcff4.pth)",
+  "classes": [
+    "Abrasion",
+    "Bruise",
+    "Burn",
+    "Laceration",
+    "Normal Skin"
+  ],
+  "class_to_idx": {
+    "Abrasion": 0,
+    "Bruise": 1,
+    "Burn": 2,
+    "Laceration": 3,
+    "Normal Skin": 4
+  },
+  "preprocess": {
+    "input_size": 224,
+    "resize": 256,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "interpolation": "bilinear",
+    "color": "RGB"
+  },
+  "train_args": {
+    "phase": "head",
+    "init": null,
+    "unfreeze_blocks": 4,
+    "splits": "dataset/splits.csv",
+    "out": "models/runs/head",
+    "epochs": 40,
+    "patience": 7,
+    "batch_size": 32,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.05,
+    "class_weights": "inverse",
+    "workers": 2,
+    "seed": 42
+  },
+  "device": "cpu",
+  "trainable_params": 595973,
+  "train_counts": {
+    "Abrasion": 75,
+    "Bruise": 137,
+    "Burn": 280,
+    "Laceration": 137,
+    "Normal Skin": 417
+  },
+  "best_epoch": 9,
+  "best_val_macro_f1": 0.7684987010324342,
+  "epochs_run": 16,
+  "train_seconds": 115.3,
+  "torch": "2.14.1"
+}

@@ -1,0 +1,53 @@
+# --- Python / ambientes ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.conda/
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- credenciais / configuração local ---
+.env
+.env.*
+*.key
+*.pem
+secrets*.json
+roboflow.json
+
+# --- sistema / editores ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.tmp
+*.log.tmp
+
+# --- dataset bruto (imagens de terceiros, sem autorização de redistribuição verificada) ---
+ml/dataset/raw/
+ml/dataset/_download/
+ml/dataset/inspection/*.npy
+
+# --- relatórios que contêm imagens do dataset (galerias / Grad-CAM) ---
+ml/reports/*/gallery*.html
+ml/reports/*/gallery_images/
+
+# --- artefatos intermediários ---
+# pesos ImageNet pré-treinados (baixados pelo torchvision / download_dataset.py)
+ml/models/*.pth
+# checkpoints das execuções candidatas (o modelo final é ml/models/best_model.pt)
+ml/models/runs/**/*.pt
+# variantes locais de exportação e modelos compilados
+ml/exports/*_fp32.mlpackage/
+*.mlmodelc/
+
+# --- iOS / Xcode (futuro) ---
+ios/**/DerivedData/
+ios/**/xcuserdata/
+ios/**/*.xcuserstate

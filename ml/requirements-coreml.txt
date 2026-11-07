@@ -1,0 +1,9 @@
+# Ambiente de conversão/validação Core ML (separado do treino).
+# coremltools 9.0 foi testado até torch 2.7.0, por isso a versão fixada abaixo.
+# coremltools não publica wheels para Windows: use WSL2 (Ubuntu) ou macOS.
+# Python 3.12.
+torch==2.7.0
+torchvision==0.22.0
+coremltools==9.0
+numpy==2.2.6
+pillow==13.0.0

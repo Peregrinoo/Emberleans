@@ -1,0 +1,91 @@
+{
+  "params": {
+    "raw": "dataset/raw",
+    "inspection": "dataset/inspection",
+    "out": "dataset",
+    "thumb_thr": 0.97,
+    "emb_thr": 0.82,
+    "normal_thumb_thr": 0.99,
+    "normal_emb_thr": 0.98,
+    "stem_min_sim": 0.8,
+    "conflict_emb_thr": 0.92,
+    "ratios": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "seed": 42
+  },
+  "input_files": 1515,
+  "removed": {
+    "sem_rotulo (Unlabeled)": 15,
+    "conflito_de_rotulo": 6,
+    "duplicata_removida_de_val_test": 73
+  },
+  "used_images": 1421,
+  "by_split": {
+    "train": {
+      "Abrasion": 75,
+      "Bruise": 137,
+      "Burn": 280,
+      "Laceration": 137,
+      "Normal Skin": 417,
+      "total": 1046
+    },
+    "val": {
+      "Abrasion": 15,
+      "Bruise": 30,
+      "Burn": 24,
+      "Laceration": 30,
+      "Normal Skin": 89,
+      "total": 188
+    },
+    "test": {
+      "Abrasion": 15,
+      "Bruise": 29,
+      "Burn": 25,
+      "Laceration": 29,
+      "Normal Skin": 89,
+      "total": 187
+    }
+  },
+  "by_class": {
+    "Abrasion": 105,
+    "Bruise": 196,
+    "Burn": 329,
+    "Laceration": 196,
+    "Normal Skin": 595
+  },
+  "n_groups": 1001,
+  "group_size_hist": {
+    "1": 770,
+    "2": 111,
+    "3": 90,
+    "4": 10,
+    "5": 6,
+    "6": 5,
+    "7": 1,
+    "8": 1,
+    "9": 2,
+    "12": 1,
+    "18": 1,
+    "20": 2,
+    "29": 1
+  },
+  "visual_duplicate_pairs": 802,
+  "label_conflict_pairs": 6,
+  "groups_crossing_splits_after_fix": 0,
+  "residual_similarity": {
+    "val_vs_train_max_thumb_sim": 0.979,
+    "val_vs_train_max_emb_sim": 0.965,
+    "test_vs_train_max_thumb_sim": 0.984,
+    "test_vs_train_max_emb_sim": 0.973
+  },
+  "screenshot_like_fraction_by_class": {
+    "Abrasion": 0.01,
+    "Bruise": 0.01,
+    "Burn": 0.204,
+    "Laceration": 0.01,
+    "Normal Skin": 0.0
+  }
+}

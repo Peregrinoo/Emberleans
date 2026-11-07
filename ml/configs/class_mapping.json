@@ -1,0 +1,7 @@
+{
+  "Abrasion": 0,
+  "Bruise": 1,
+  "Burn": 2,
+  "Laceration": 3,
+  "Normal Skin": 4
+}

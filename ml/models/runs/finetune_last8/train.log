@@ -1,0 +1,12 @@
+device=cpu phase=finetune
+ep 01 | train loss 0.781 acc 0.772 | val loss 0.473 acc 0.835 mF1 0.756 burnR 0.708 | 15.3s *
+ep 02 | train loss 0.506 acc 0.917 | val loss 0.489 acc 0.851 mF1 0.783 burnR 0.667 | 14.9s *
+ep 03 | train loss 0.465 acc 0.952 | val loss 0.481 acc 0.846 mF1 0.774 burnR 0.667 | 14.2s 
+ep 04 | train loss 0.436 acc 0.964 | val loss 0.468 acc 0.846 mF1 0.761 burnR 0.583 | 14.9s 
+ep 05 | train loss 0.411 acc 0.971 | val loss 0.485 acc 0.835 mF1 0.753 burnR 0.583 | 14.2s 
+ep 06 | train loss 0.396 acc 0.982 | val loss 0.462 acc 0.846 mF1 0.756 burnR 0.625 | 14.2s 
+ep 07 | train loss 0.392 acc 0.987 | val loss 0.476 acc 0.840 mF1 0.755 burnR 0.625 | 14.6s 
+ep 08 | train loss 0.387 acc 0.988 | val loss 0.478 acc 0.846 mF1 0.753 burnR 0.583 | 14.6s 
+ep 09 | train loss 0.383 acc 0.985 | val loss 0.466 acc 0.835 mF1 0.740 burnR 0.583 | 14.5s 
+early stopping (sem melhora há 7 épocas)
+melhor época 2 | val macro F1 0.7829 | 2.2 min

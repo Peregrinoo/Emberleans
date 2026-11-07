@@ -1,0 +1,19 @@
+device=cpu phase=head
+ep 01 | train loss 1.098 acc 0.643 | val loss 0.739 acc 0.755 mF1 0.675 burnR 0.750 | 7.9s *
+ep 02 | train loss 0.661 acc 0.858 | val loss 0.593 acc 0.798 mF1 0.718 burnR 0.458 | 7.8s *
+ep 03 | train loss 0.564 acc 0.904 | val loss 0.551 acc 0.814 mF1 0.734 burnR 0.625 | 7.4s *
+ep 04 | train loss 0.497 acc 0.945 | val loss 0.566 acc 0.809 mF1 0.729 burnR 0.542 | 7.0s 
+ep 05 | train loss 0.460 acc 0.946 | val loss 0.508 acc 0.819 mF1 0.740 burnR 0.708 | 7.0s *
+ep 06 | train loss 0.451 acc 0.953 | val loss 0.571 acc 0.782 mF1 0.701 burnR 0.667 | 6.7s 
+ep 07 | train loss 0.435 acc 0.966 | val loss 0.524 acc 0.819 mF1 0.741 burnR 0.625 | 6.7s *
+ep 08 | train loss 0.410 acc 0.982 | val loss 0.507 acc 0.814 mF1 0.736 burnR 0.625 | 6.7s 
+ep 09 | train loss 0.403 acc 0.981 | val loss 0.503 acc 0.846 mF1 0.768 burnR 0.667 | 7.3s *
+ep 10 | train loss 0.388 acc 0.979 | val loss 0.525 acc 0.809 mF1 0.710 burnR 0.583 | 7.3s 
+ep 11 | train loss 0.371 acc 0.990 | val loss 0.480 acc 0.819 mF1 0.732 burnR 0.708 | 7.5s 
+ep 12 | train loss 0.379 acc 0.987 | val loss 0.550 acc 0.814 mF1 0.746 burnR 0.625 | 7.1s 
+ep 13 | train loss 0.368 acc 0.989 | val loss 0.533 acc 0.824 mF1 0.749 burnR 0.583 | 6.9s 
+ep 14 | train loss 0.361 acc 0.994 | val loss 0.523 acc 0.824 mF1 0.736 burnR 0.583 | 7.3s 
+ep 15 | train loss 0.370 acc 0.991 | val loss 0.516 acc 0.835 mF1 0.765 burnR 0.583 | 7.4s 
+ep 16 | train loss 0.359 acc 0.992 | val loss 0.514 acc 0.830 mF1 0.745 burnR 0.667 | 6.8s 
+early stopping (sem melhora há 7 épocas)
+melhor época 9 | val macro F1 0.7685 | 1.9 min

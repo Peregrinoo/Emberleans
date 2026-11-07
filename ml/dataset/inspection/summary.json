@@ -1,0 +1,2222 @@
+{
+  "total_files": 1515,
+  "corrupted": [],
+  "unlabeled": 15,
+  "counts_by_split_folder": {
+    "test/abrasion": 15,
+    "test/bruise": 11,
+    "test/burn": 47,
+    "test/laceration": 23,
+    "test/normal skin": 58,
+    "train/Unlabeled": 13,
+    "train/abrasion": 83,
+    "train/bruise": 175,
+    "train/burn": 302,
+    "train/laceration": 153,
+    "train/normal skin": 485,
+    "valid/Unlabeled": 2,
+    "valid/abrasion": 11,
+    "valid/bruise": 10,
+    "valid/burn": 51,
+    "valid/laceration": 24,
+    "valid/normal skin": 52
+  },
+  "exact_pixel_duplicate_extra_copies": 0,
+  "same_source_extra_copies": 301,
+  "near_duplicate_pairs": 358,
+  "merge_reasons": {
+    "src": 301,
+    "dhash": 99
+  },
+  "n_groups": 1115,
+  "groups_with_more_than_one_image": 203,
+  "label_conflict_groups": [
+    {
+      "group": "g00055",
+      "labels": [
+        "Abrasion",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/abrasion/depositphotos_63206887-stock-photo-scraped-knee-Editado_jpg.rf.8048060982ec9ac3e208ec7b5635d55e.jpg",
+        "train/abrasion/depositphotos_63206887-stock-photo-scraped-knee_jpg.rf.b59e386d08083ece532d7f21ab137c9b.jpg",
+        "train/abrasion/images-6-_jpg.rf.d2cf494ab4e6e8c6e7718a755f5fbf3d.jpg",
+        "test/normal skin/images-6-_jpg.rf.21d88d25b7b126151e1cd6785c0344c5.jpg"
+      ]
+    },
+    {
+      "group": "g00064",
+      "labels": [
+        "Abrasion",
+        "Laceration"
+      ],
+      "files": [
+        "train/abrasion/heridas-cortantes-1-1-Editado_jpg.rf.d2178ba9288afb4f20d873ea09d4c6cb.jpg",
+        "train/laceration/cut-44-_jpg.rf.f81ab7c7c62f5109298f6e7caa1dedd9.jpg",
+        "valid/abrasion/heridas-cortantes-1-1-_jpg.rf.de3d4bc9c3422e725c511f0882e85bcd.jpg"
+      ]
+    },
+    {
+      "group": "g00069",
+      "labels": [
+        "Abrasion",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/abrasion/images-1-_jpg.rf.c31a533722838d47dcb106159380f94a.jpg",
+        "test/normal skin/images-1-_jpg.rf.a0a9db7bbdaf5352fa52cedcd3d13d97.jpg"
+      ]
+    },
+    {
+      "group": "g00074",
+      "labels": [
+        "Abrasion",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/abrasion/images-4-_jpg.rf.efee7f2c61546240d047799521fee800.jpg",
+        "train/normal skin/images-4-_jpg.rf.aff938ac512c8ff17bc6ef089d1a4d22.jpg"
+      ]
+    },
+    {
+      "group": "g00085",
+      "labels": [
+        "Abrasion",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/abrasion/images-5-_jpg.rf.0cf8477f8b4f4520ee28bc6cc190423f.jpg",
+        "train/normal skin/1000_F_209385308_bwLtx5gSQz3TvxpxD9dTAPmh6tDb2szT_jpg.rf.5b7dfbb960b6dc2015594e1a27e3a2b0.jpg",
+        "train/normal skin/31_bright_jpg.rf.60eb2338a8d781dbe6480ab9cae8b759.jpg",
+        "train/normal skin/35_bright_jpg.rf.abb685331b4cf78924e22845bcb3b865.jpg",
+        "train/normal skin/360_F_209385308_bwLtx5gSQz3TvxpxD9dTAPmh6tDb2szT_jpg.rf.311d7eb2085e9faf94a81f32ba674159.jpg",
+        "train/normal skin/72_bright_jpg.rf.651d129cf6939721590fc79b86797a16.jpg",
+        "train/normal skin/81_bright_jpg.rf.a495909e14ae266e433b563fb279a4d3.jpg",
+        "train/normal skin/depositphotos_126589994-stock-photo-human-skin-with-hair_jpg.rf.3d2846eea6e19c269926fc69077bfb7b.jpg",
+        "train/normal skin/depositphotos_196461962-stock-photo-acne-skin-face-woman-problem_jpg.rf.304babfff9833ad5905c3372fdc24e90.jpg",
+        "train/normal skin/depositphotos_217987526-stock-photo-texture-human-skin_jpg.rf.20b40e3976260cc56f261797cf168322.jpg",
+        "train/normal skin/depositphotos_220434630-stock-photo-wet-human-skin-background-texture-1-_jpg.rf.db030eda89bcf6241c5b37284ae1ea8d.jpg",
+        "train/normal skin/depositphotos_354355258-stock-photo-clean-young-human-skin-texture_jpg.rf.c1db6fc81fd5fea23d146b7eb8cc8ee2.jpg",
+        "train/normal skin/depositphotos_384069034-stock-photo-detail-human-skin-texture_jpg.rf.c2619c2fa5afa26ee72ba018d3098caf.jpg",
+        "train/normal skin/depositphotos_389013532-stock-photo-white-clean-human-skin-macro_jpg.rf.74520d29d7992092d965ac04e5acfd20.jpg",
+        "train/normal skin/images-5-_jpg.rf.54ea9bad5a19c3da3ddbfc7162380a41.jpg",
+        "test/normal skin/depositphotos_192675624-stock-photo-texture-of-human-skin-closeup_jpg.rf.4b6878303294c7c78ead63d4c9d1aeed.jpg",
+        "test/normal skin/depositphotos_445489480-stock-photo-pink-human-skin-texture-macro_jpg.rf.0cebca5a22d6e6d4ff6e9b6070bb0adf.jpg"
+      ]
+    },
+    {
+      "group": "g00087",
+      "labels": [
+        "Abrasion",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/abrasion/images-7-_jpg.rf.1f0bc89118d0762398c6450880705229.jpg",
+        "train/normal skin/images-7-_jpg.rf.956159c72db248d3d811e66f62b48cd6.jpg"
+      ]
+    },
+    {
+      "group": "g00115",
+      "labels": [
+        "Bruise",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/bruise/bruise10_jpg.rf.9c77e5590c22fb2796f63f1ea18200d9.jpg",
+        "train/normal skin/premium_photo-1675869589440-8b3f38dc5fe2_jpg.rf.6d0fcab4339d4c8606e6a579f804b83a.jpg"
+      ]
+    },
+    {
+      "group": "g00262",
+      "labels": [
+        "Bruise",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/bruise/images888_jpg.rf.1e023b461508e40f9fc94ed1e4866bfa.jpg",
+        "train/normal skin/1000_F_100032446_oArfjQ27b5sUTPSLKfdng3ABoIspiERM_jpg.rf.e6ffd65b6fa4b99eab0ba92737f52917.jpg",
+        "train/normal skin/1000_F_131156490_DmgLfo4xdpQgnEeuGm9RD7todmuwUsKY_jpg.rf.55c969fe0e4a052d3f3b189d3610eb74.jpg",
+        "train/normal skin/1000_F_132171170_z5dXXkJHWD9YzcVnMlj8VZqeEPJ8JU69_jpg.rf.8bbf9e33579cb8a65bc9faeba8700217.jpg",
+        "train/normal skin/111_bright_jpg.rf.ba56e6248ae2041f3a7f3a0c8ec73ba6.jpg",
+        "train/normal skin/149_bright_jpg.rf.0fda7dd587e8cc7c7de954aaaf7c1296.jpg",
+        "train/normal skin/IisQ54GKs9c_jpg.rf.a8d479c7a25f08457712e2482447e522.jpg",
+        "train/normal skin/depositphotos_220079018-stock-photo-human-skin-texture-various-parts_jpg.rf.f64a77df98058f65d4cdec6399625382.jpg",
+        "train/normal skin/depositphotos_220079046-stock-photo-human-skin-texture-various-parts_jpg.rf.9fe89ccd565ab93618c09394f45ca9cc.jpg",
+        "train/normal skin/depositphotos_227564634-stock-photo-human-skin-super-macro-texture_jpg.rf.90e9d8855f4b4a448b3ea3f2025d0fa9.jpg",
+        "train/normal skin/depositphotos_340362882-stock-photo-close-human-skin_jpg.rf.bf3923411c1b20b0ce8852167c594131.jpg",
+        "train/normal skin/depositphotos_53540631-stock-photo-nature_jpg.rf.d0d4def6ea9298f4d9c83daedbae6794.jpg",
+        "train/normal skin/istockphoto-1010039320-612x612_jpg.rf.aa168ecf47e77f589ef43ead44a8ccf4.jpg",
+        "valid/normal skin/depositphotos_361102626-stock-photo-macro-female-skin-1-_jpg.rf.51a65f4578ae45bf0417e1479830b4fd.jpg",
+        "test/normal skin/112_bright_jpg.rf.657e11d0a1226bcf1933f22d4d54b564.jpg",
+        "test/normal skin/depositphotos_195725244-stock-photo-human-skin-texture-close-up_jpg.rf.75f8ba7fa59fc79d15fc05a5b4feabae.jpg",
+        "test/normal skin/depositphotos_249679492-stock-photo-background-human-skin_jpg.rf.4021104d044c917c1cf603f48efe3007.jpg",
+        "test/normal skin/depositphotos_428014252-stock-photo-stretch-marks-skin-middle-aged_jpg.rf.9dbbb4354d421a78bb16d993a7602384.jpg"
+      ]
+    },
+    {
+      "group": "g00268",
+      "labels": [
+        "Abrasion",
+        "Bruise",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/bruise/images_jpg.rf.b22e876dee313d5dbc02f1d3686b6f32.jpg",
+        "train/normal skin/images_jpg.rf.14689f9a586547f0ab04be510ca21739.jpg",
+        "valid/abrasion/images_jpg.rf.5ab2864efaa4a81976b46dbef3bf7568.jpg"
+      ]
+    },
+    {
+      "group": "g00279",
+      "labels": [
+        "Burn",
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/burn/GettyImages-1301315419_jpg.rf.d3c3425a062764e65736e10cc7588df3.jpg",
+        "train/burn/GettyImages-1301315419_jpg.rf.efea2742b0fd4e977aea4ae6ff998f4a.jpg",
+        "train/laceration/4d0c7c03-13c6-4462-93d0-d95a85e6a77d_jpg.rf.0144a8ae6eaa44cb6aabf9e3f2b66f2f.jpg",
+        "train/normal skin/77_bright_jpg.rf.ed7889b805c3df67179af8462b740311.jpg",
+        "valid/burn/GettyImages-1301315419_jpg.rf.6eb4d50f82a8c8e7973a4a2917551a1a.jpg"
+      ]
+    },
+    {
+      "group": "g00299",
+      "labels": [
+        "Burn",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0010_jpg.rf.68265a2fa2e0efa171b984a9dedec4c6.jpg",
+        "train/burn/IMG-20231230-WA0010_jpg.rf.7507b0627b494f87d7b9983c70c4eba4.jpg",
+        "train/burn/IMG-20231230-WA0010_jpg.rf.8a831ea72546175fe340c5fd5d19853c.jpg",
+        "train/burn/IMG-20231230-WA0010_jpg.rf.ff9e96c87081564ba10e1cf9e13c0461.jpg",
+        "train/normal skin/1000_F_88188994_bRiLIk8DIDXQwbJrGTnlmbxcHRSFRETs_jpg.rf.58d6d91738c0dae40d4e343448394e13.jpg",
+        "train/normal skin/depositphotos_118473750-stock-photo-stretch-marks-of-skin-on_jpg.rf.e6f323d02c609f049d1391aed4645dda.jpg",
+        "train/normal skin/depositphotos_219777460-stock-photo-depilation-and-saccharification-depilation-follicle_jpg.rf.c457ca20e1da09613b464bc3ef95de73.jpg",
+        "train/normal skin/depositphotos_29945131-stock-photo-sunburn-skin_jpg.rf.e6b5f757a8d8e51bab9b2e88ebe73519.jpg",
+        "train/normal skin/depositphotos_309791488-stock-photo-ideal-baby-skin_jpg.rf.2f0ae15b3cf8403b472c7ae5d88db5f7.jpg",
+        "train/normal skin/depositphotos_324286418-stock-photo-flat-skin-pattern-background_jpg.rf.274662dff742e080ee49ac12353c9c71.jpg",
+        "train/normal skin/depositphotos_34076467-stock-photo-fabric-texture_jpg.rf.0537dc213bdf8223bd9ab6a2806a0d12.jpg",
+        "train/normal skin/depositphotos_383621698-stock-photo-closeup-human-skin-moles-spots_jpg.rf.6aaa1069b54538ae9f9117d45d119af3.jpg",
+        "valid/burn/IMG-20231230-WA0048_jpg.rf.0103cdd932546ef29db0def5deaae6ad.jpg",
+        "valid/burn/IMG-20231230-WA0048_jpg.rf.cdc288314fb8d172436e5638ddd37580.jpg",
+        "test/burn/IMG-20231230-WA0010_jpg.rf.a713718bac1b4fc07d1511d1cc4a8124.jpg",
+        "test/burn/IMG-20231230-WA0010_jpg.rf.e8b536ab9a957366bd399b10c009d476.jpg",
+        "test/burn/IMG-20231230-WA0048_jpg.rf.44037cf44b906d42052dd64ebba29643.jpg"
+      ]
+    },
+    {
+      "group": "g00575",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/119_jpg.rf.3b755ceefca7d0438c42b4684d5eca8a.jpg",
+        "train/normal skin/119_jpg.rf.9b4aa65a64034114d12350c2e7e9e71a.jpg"
+      ]
+    },
+    {
+      "group": "g00576",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/120_jpg.rf.d10b26b0d22dc45fc986418d4a8e221c.jpg",
+        "train/normal skin/120_jpg.rf.65c2366401569e928508e172cbf0ab56.jpg"
+      ]
+    },
+    {
+      "group": "g00580",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/128_jpg.rf.dcdc1e64696c8b7c1de8b7b7faabca78.jpg",
+        "train/normal skin/128_jpg.rf.a46e96144f3c60e11e14a77f6cb49cc4.jpg"
+      ]
+    },
+    {
+      "group": "g00584",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/133_jpg.rf.88c1a4cb3374ba4729fe8b8cfc0cfd76.jpg",
+        "valid/normal skin/133_jpg.rf.30783390139d0da41f2aba1224a88971.jpg"
+      ]
+    },
+    {
+      "group": "g00585",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/135_jpg.rf.edb79883fece405bd73cf5a6affbb132.jpg",
+        "train/normal skin/135_jpg.rf.1aedf57aba07ce8ae54be341092215b3.jpg"
+      ]
+    },
+    {
+      "group": "g00586",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/136_jpg.rf.8934d3f906e530651ed159e68a69af3f.jpg",
+        "train/normal skin/136_jpg.rf.e1c9d3ec44c1d0a54fd5515e864d48ba.jpg"
+      ]
+    },
+    {
+      "group": "g00587",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/137_jpg.rf.ce6843571f2714e7c605e16338928326.jpg",
+        "test/normal skin/137_jpg.rf.fdca5325c149d01556aa71773b34be56.jpg"
+      ]
+    },
+    {
+      "group": "g00589",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/139_jpg.rf.7a60534c7187553d3689e6c815fb4d2d.jpg",
+        "test/normal skin/139_jpg.rf.a08a35e522e7a2c2364e0d0d22ed6a62.jpg"
+      ]
+    },
+    {
+      "group": "g00590",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/142_jpg.rf.5598eecddc0c7333c8215d2b246e838f.jpg",
+        "train/normal skin/142_jpg.rf.6f1742a85f6442e083be3ee63c04e166.jpg"
+      ]
+    },
+    {
+      "group": "g00592",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/145_jpg.rf.14f2face174dd1f160bf0ce0b9a06e73.jpg",
+        "train/normal skin/145_jpg.rf.43332bdfceb00b04abb359fd6b83b3f1.jpg"
+      ]
+    },
+    {
+      "group": "g00593",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/146_jpg.rf.04a865488da8c716a4d840f32f2c5ff5.jpg",
+        "train/normal skin/146_jpg.rf.95368d359dd0be33baea2f4d13e9e9bc.jpg"
+      ]
+    },
+    {
+      "group": "g00597",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/150_jpg.rf.80aa38bdbe317564118841be653d64c6.jpg",
+        "train/normal skin/150_jpg.rf.4d8233da4d99ef12526ffe3212c41b73.jpg"
+      ]
+    },
+    {
+      "group": "g00598",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/152_jpg.rf.de49c7322bd67d3d991ce958c3edd9cf.jpg",
+        "train/normal skin/152_jpg.rf.78e834c83e4403a48e47132ec751cb71.jpg"
+      ]
+    },
+    {
+      "group": "g00600",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/154_jpg.rf.e33189bbd0ce4f16df61426d5b3a37f0.jpg",
+        "train/normal skin/154_jpg.rf.e7b510898905cb4504180beba2239acb.jpg"
+      ]
+    },
+    {
+      "group": "g00601",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/155_jpg.rf.5b3b6e60aade40ef666f6934d24a85d9.jpg",
+        "train/normal skin/155_jpg.rf.eb00b2f04ffccd8c8b4b5a74e55d8538.jpg"
+      ]
+    },
+    {
+      "group": "g00603",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/157_jpg.rf.1a342287277107f62e76786b6a831404.jpg",
+        "train/normal skin/157_jpg.rf.25b46a31037d47045af7470a35c6af0c.jpg"
+      ]
+    },
+    {
+      "group": "g00604",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/159_jpg.rf.f3d4f9445834e21e2815561f7920f734.jpg",
+        "train/normal skin/159_jpg.rf.bcc79aab82024b6035f15750c1d25098.jpg"
+      ]
+    },
+    {
+      "group": "g00608",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/162_jpg.rf.a6db8e6fcd6b4419548f2ac5b8f9c64f.jpg",
+        "train/normal skin/162_jpg.rf.a018bdba2ca0ada238dcda3c23c31403.jpg"
+      ]
+    },
+    {
+      "group": "g00609",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/163_jpg.rf.5427240d7aef9914ccc7d2246ff60155.jpg",
+        "test/normal skin/163_jpg.rf.5b65caee7732c953158bdb2ba9d5ff64.jpg"
+      ]
+    },
+    {
+      "group": "g00611",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/167_jpg.rf.c91c66c5ca6ce07218c757220dcfc987.jpg",
+        "train/normal skin/167_jpg.rf.f4dcc25e84226d9a33bdc24965e739d3.jpg"
+      ]
+    },
+    {
+      "group": "g00612",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/169_jpg.rf.41b028972382fd86ee30d66c1154da99.jpg",
+        "train/normal skin/169_jpg.rf.2fad41eb280b8a6fce2dd2a15768a369.jpg"
+      ]
+    },
+    {
+      "group": "g00666",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/261_jpg.rf.17e3742bc0b8044ef2d55fb4cb18a943.jpg",
+        "train/normal skin/124_jpg.rf.0fa687d06edf74cfb1086c1ce463293c.jpg",
+        "valid/laceration/124_jpg.rf.790fcbb6a9c79e41a2866160f6d809a6.jpg"
+      ]
+    },
+    {
+      "group": "g00806",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/125_jpg.rf.2f3750470c77b85b98f72c31457d8716.jpg",
+        "valid/laceration/125_jpg.rf.0b06c4d8bf6d1c275f93bad1c31a8230.jpg"
+      ]
+    },
+    {
+      "group": "g00812",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/134_jpg.rf.12dafe99bc5a64e5441ae8a1a8098674.jpg",
+        "valid/laceration/134_jpg.rf.d9e59831f88b31b6fdfd4f9ab146d51f.jpg"
+      ]
+    },
+    {
+      "group": "g00818",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/13_jpg.rf.39b57ba0de122c602959e67d9f3c8825.jpg",
+        "test/laceration/13_jpg.rf.dab9afd4d989f8d2e50325379081f0b7.jpg"
+      ]
+    },
+    {
+      "group": "g00821",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/141_jpg.rf.85efb3d452e68254edb4542b612e6ae8.jpg",
+        "test/laceration/141_jpg.rf.9f43977074d9728935b340ea392689bf.jpg"
+      ]
+    },
+    {
+      "group": "g00850",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/164_jpg.rf.f6f6e2f6bfab6c61467e7728235df565.jpg",
+        "test/laceration/164_jpg.rf.5c4debb5272ef1c16392f56a3a2f633d.jpg"
+      ]
+    },
+    {
+      "group": "g01143",
+      "labels": [
+        "Abrasion",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/images-19-_jpg.rf.e2bacacf742e9db13bde16cffcc5f2d2.jpg",
+        "valid/abrasion/istockphoto-1277257276-170667a_jpg.rf.6098285055753d829fafb9cdeebeb215.jpg",
+        "test/abrasion/images-19-_jpg.rf.33b994863076158af57b7cb4cd3e1afe.jpg"
+      ]
+    },
+    {
+      "group": "g01144",
+      "labels": [
+        "Abrasion",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/images-2-_jpg.rf.52010fa093a418b588e8c4dfc6f862b6.jpg",
+        "test/abrasion/images-2-_jpg.rf.21448ca11263206224981a285e612e94.jpg"
+      ]
+    },
+    {
+      "group": "g01145",
+      "labels": [
+        "Abrasion",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/images-20-_jpg.rf.fbd8bcfd18acf17b07d9685fd6f9f88a.jpg",
+        "valid/abrasion/images-20-_jpg.rf.7b0d9b2d5c89e701d881b19336e8a164.jpg"
+      ]
+    },
+    {
+      "group": "g01285",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "valid/laceration/11_jpg.rf.2ac22bc7d7b5558576542d88f2e7f647.jpg",
+        "valid/normal skin/11_jpg.rf.1ca65851d450116463436abc24c5f326.jpg"
+      ]
+    },
+    {
+      "group": "g01293",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "valid/laceration/151_jpg.rf.05115c051dc1c00892cdf1e441df202c.jpg",
+        "test/normal skin/151_jpg.rf.39e70675afc90fe50cccaa436427e519.jpg"
+      ]
+    },
+    {
+      "group": "g01438",
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "test/laceration/165_jpg.rf.5052e0d6366990e19fddde3bb3653885.jpg",
+        "test/normal skin/165_jpg.rf.628417934b4522e3770a19dff0546e58.jpg"
+      ]
+    }
+  ],
+  "cross_split_leak_groups": [
+    {
+      "group": "g00013",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Abrasion"
+      ],
+      "files": [
+        "train/abrasion/100920232-herida-por-caida-de-rodilla_jpg.rf.f17e2e452685d78fd71cde466ab0eff0.jpg",
+        "train/abrasion/25858_19-Editado_jpg.rf.c8054a8516f0bd60249db0c33bb37eb8.jpg",
+        "train/abrasion/25858_19_jpg.rf.9f28a90bdb4819dbfe5b44cb5cb11d35.jpg",
+        "train/abrasion/istockphoto-905802242-612x612_jpg.rf.34174540cd301366362e93ed73ac0a90.jpg",
+        "test/abrasion/istockphoto-905802242-170667a_jpg.rf.1b17aa0044ea42f234147bbf7f354fad.jpg"
+      ]
+    },
+    {
+      "group": "g00014",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Abrasion"
+      ],
+      "files": [
+        "train/abrasion/102525841-piel-raspada-en-el-brazo-de-la-mujer-traumatismo-menor-debido-a-una-caida-Editado_jpg.rf.ed8a168ec55dd9428b32edca21849639.jpg",
+        "test/abrasion/102525841-piel-raspada-en-el-brazo-de-la-mujer-traumatismo-menor-debido-a-una-caida_jpg.rf.96f6512a738611147263a43f8557abec.jpg"
+      ]
+    },
+    {
+      "group": "g00015",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Abrasion"
+      ],
+      "files": [
+        "train/abrasion/143980965-dolor-en-la-rodilla-herida-magullada-en-la-rodilla-el-nino-se-cayo-y-se-rasco-la-rodilla-Editado_jpg.rf.a2e7d7391204478bedc35832f0c4438e.jpg",
+        "test/abrasion/143980965-dolor-en-la-rodilla-herida-magullada-en-la-rodilla-el-nino-se-cayo-y-se-rasco-la-rodilla_jpg.rf.5013fc2bd0a9d91c4b9246bafb59c41a.jpg"
+      ]
+    },
+    {
+      "group": "g00019",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Abrasion"
+      ],
+      "files": [
+        "train/abrasion/191703357-scratch-lesion-caused-by-the-accident-on-leg-skin_jpg.rf.fd152a8f7a09942bb2c45e0535c2c1fd.jpg",
+        "valid/abrasion/191703357-scratch-lesion-caused-by-the-accident-on-leg-skin-Editado_jpg.rf.7aa5f223b2d6371df111094d63e44685.jpg"
+      ]
+    },
+    {
+      "group": "g00024",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Abrasion"
+      ],
+      "files": [
+        "train/abrasion/59048213-la-sangre-que-aspira-del-mosquito-en-la-piel-humana-con-una-mancha-roja-Editado_jpg.rf.cf55f531114abba15f9a6bf05c56f5e0.jpg",
+        "test/abrasion/59048213-la-sangre-que-aspira-del-mosquito-en-la-piel-humana-con-una-mancha-roja_jpg.rf.92585a7da691c641b231f849dbf5c6fd.jpg"
+      ]
+    },
+    {
+      "group": "g00036",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Abrasion"
+      ],
+      "files": [
+        "train/abrasion/Herida-Editado_png.rf.66c400bc6f49a8dfd3ba4d48cdce5d47.jpg",
+        "valid/abrasion/Herida_png.rf.33f74955a35fc04eed6f105627f185df.jpg"
+      ]
+    },
+    {
+      "group": "g00055",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Abrasion",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/abrasion/depositphotos_63206887-stock-photo-scraped-knee-Editado_jpg.rf.8048060982ec9ac3e208ec7b5635d55e.jpg",
+        "train/abrasion/depositphotos_63206887-stock-photo-scraped-knee_jpg.rf.b59e386d08083ece532d7f21ab137c9b.jpg",
+        "train/abrasion/images-6-_jpg.rf.d2cf494ab4e6e8c6e7718a755f5fbf3d.jpg",
+        "test/normal skin/images-6-_jpg.rf.21d88d25b7b126151e1cd6785c0344c5.jpg"
+      ]
+    },
+    {
+      "group": "g00063",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Abrasion"
+      ],
+      "files": [
+        "train/abrasion/herida-infectada-Editado_jpg.rf.c706fa49673990f0ee064a3b47975c33.jpg",
+        "test/abrasion/herida-infectada_webp.rf.7c13b6df7b62ccd3ed4bda21c718299c.jpg"
+      ]
+    },
+    {
+      "group": "g00064",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Abrasion",
+        "Laceration"
+      ],
+      "files": [
+        "train/abrasion/heridas-cortantes-1-1-Editado_jpg.rf.d2178ba9288afb4f20d873ea09d4c6cb.jpg",
+        "train/laceration/cut-44-_jpg.rf.f81ab7c7c62f5109298f6e7caa1dedd9.jpg",
+        "valid/abrasion/heridas-cortantes-1-1-_jpg.rf.de3d4bc9c3422e725c511f0882e85bcd.jpg"
+      ]
+    },
+    {
+      "group": "g00065",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Abrasion"
+      ],
+      "files": [
+        "train/abrasion/heridas-espinilla-contusiones-despues-caida_406939-6229_avif.rf.6e0e30acab509adf42ea0e621d284562.jpg",
+        "valid/abrasion/heridas-espinilla-contusiones-despues-caida_406939-6229-Editado_png.rf.c752f40d78f3e94bfeebb6676d5e148f.jpg"
+      ]
+    },
+    {
+      "group": "g00068",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Abrasion"
+      ],
+      "files": [
+        "train/abrasion/heridas_generales_03_jpg.rf.6980d32566b8511c361bdeffcc767139.jpg",
+        "valid/abrasion/heridas_generales_03-Editado_jpg.rf.d78b9cc5fb0411fb2aa234a196684834.jpg"
+      ]
+    },
+    {
+      "group": "g00069",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Abrasion",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/abrasion/images-1-_jpg.rf.c31a533722838d47dcb106159380f94a.jpg",
+        "test/normal skin/images-1-_jpg.rf.a0a9db7bbdaf5352fa52cedcd3d13d97.jpg"
+      ]
+    },
+    {
+      "group": "g00072",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Abrasion"
+      ],
+      "files": [
+        "train/abrasion/images-34-_jpg.rf.002fcbedb28b3e1e80ffb703bba6f30b.jpg",
+        "valid/abrasion/images-34-Editado_jpg.rf.6daabdf63f7652bef47d615ab30e92fb.jpg"
+      ]
+    },
+    {
+      "group": "g00082",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Abrasion"
+      ],
+      "files": [
+        "train/abrasion/images-48-_jpg.rf.043b857244f7ebd1013f2145103349a4.jpg",
+        "test/abrasion/images-48-Editado_jpg.rf.5675faff865bb6642457207a530fb207.jpg"
+      ]
+    },
+    {
+      "group": "g00085",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Abrasion",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/abrasion/images-5-_jpg.rf.0cf8477f8b4f4520ee28bc6cc190423f.jpg",
+        "train/normal skin/1000_F_209385308_bwLtx5gSQz3TvxpxD9dTAPmh6tDb2szT_jpg.rf.5b7dfbb960b6dc2015594e1a27e3a2b0.jpg",
+        "train/normal skin/31_bright_jpg.rf.60eb2338a8d781dbe6480ab9cae8b759.jpg",
+        "train/normal skin/35_bright_jpg.rf.abb685331b4cf78924e22845bcb3b865.jpg",
+        "train/normal skin/360_F_209385308_bwLtx5gSQz3TvxpxD9dTAPmh6tDb2szT_jpg.rf.311d7eb2085e9faf94a81f32ba674159.jpg",
+        "train/normal skin/72_bright_jpg.rf.651d129cf6939721590fc79b86797a16.jpg",
+        "train/normal skin/81_bright_jpg.rf.a495909e14ae266e433b563fb279a4d3.jpg",
+        "train/normal skin/depositphotos_126589994-stock-photo-human-skin-with-hair_jpg.rf.3d2846eea6e19c269926fc69077bfb7b.jpg",
+        "train/normal skin/depositphotos_196461962-stock-photo-acne-skin-face-woman-problem_jpg.rf.304babfff9833ad5905c3372fdc24e90.jpg",
+        "train/normal skin/depositphotos_217987526-stock-photo-texture-human-skin_jpg.rf.20b40e3976260cc56f261797cf168322.jpg",
+        "train/normal skin/depositphotos_220434630-stock-photo-wet-human-skin-background-texture-1-_jpg.rf.db030eda89bcf6241c5b37284ae1ea8d.jpg",
+        "train/normal skin/depositphotos_354355258-stock-photo-clean-young-human-skin-texture_jpg.rf.c1db6fc81fd5fea23d146b7eb8cc8ee2.jpg",
+        "train/normal skin/depositphotos_384069034-stock-photo-detail-human-skin-texture_jpg.rf.c2619c2fa5afa26ee72ba018d3098caf.jpg",
+        "train/normal skin/depositphotos_389013532-stock-photo-white-clean-human-skin-macro_jpg.rf.74520d29d7992092d965ac04e5acfd20.jpg",
+        "train/normal skin/images-5-_jpg.rf.54ea9bad5a19c3da3ddbfc7162380a41.jpg",
+        "test/normal skin/depositphotos_192675624-stock-photo-texture-of-human-skin-closeup_jpg.rf.4b6878303294c7c78ead63d4c9d1aeed.jpg",
+        "test/normal skin/depositphotos_445489480-stock-photo-pink-human-skin-texture-macro_jpg.rf.0cebca5a22d6e6d4ff6e9b6070bb0adf.jpg"
+      ]
+    },
+    {
+      "group": "g00262",
+      "splits": [
+        "test",
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Bruise",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/bruise/images888_jpg.rf.1e023b461508e40f9fc94ed1e4866bfa.jpg",
+        "train/normal skin/1000_F_100032446_oArfjQ27b5sUTPSLKfdng3ABoIspiERM_jpg.rf.e6ffd65b6fa4b99eab0ba92737f52917.jpg",
+        "train/normal skin/1000_F_131156490_DmgLfo4xdpQgnEeuGm9RD7todmuwUsKY_jpg.rf.55c969fe0e4a052d3f3b189d3610eb74.jpg",
+        "train/normal skin/1000_F_132171170_z5dXXkJHWD9YzcVnMlj8VZqeEPJ8JU69_jpg.rf.8bbf9e33579cb8a65bc9faeba8700217.jpg",
+        "train/normal skin/111_bright_jpg.rf.ba56e6248ae2041f3a7f3a0c8ec73ba6.jpg",
+        "train/normal skin/149_bright_jpg.rf.0fda7dd587e8cc7c7de954aaaf7c1296.jpg",
+        "train/normal skin/IisQ54GKs9c_jpg.rf.a8d479c7a25f08457712e2482447e522.jpg",
+        "train/normal skin/depositphotos_220079018-stock-photo-human-skin-texture-various-parts_jpg.rf.f64a77df98058f65d4cdec6399625382.jpg",
+        "train/normal skin/depositphotos_220079046-stock-photo-human-skin-texture-various-parts_jpg.rf.9fe89ccd565ab93618c09394f45ca9cc.jpg",
+        "train/normal skin/depositphotos_227564634-stock-photo-human-skin-super-macro-texture_jpg.rf.90e9d8855f4b4a448b3ea3f2025d0fa9.jpg",
+        "train/normal skin/depositphotos_340362882-stock-photo-close-human-skin_jpg.rf.bf3923411c1b20b0ce8852167c594131.jpg",
+        "train/normal skin/depositphotos_53540631-stock-photo-nature_jpg.rf.d0d4def6ea9298f4d9c83daedbae6794.jpg",
+        "train/normal skin/istockphoto-1010039320-612x612_jpg.rf.aa168ecf47e77f589ef43ead44a8ccf4.jpg",
+        "valid/normal skin/depositphotos_361102626-stock-photo-macro-female-skin-1-_jpg.rf.51a65f4578ae45bf0417e1479830b4fd.jpg",
+        "test/normal skin/112_bright_jpg.rf.657e11d0a1226bcf1933f22d4d54b564.jpg",
+        "test/normal skin/depositphotos_195725244-stock-photo-human-skin-texture-close-up_jpg.rf.75f8ba7fa59fc79d15fc05a5b4feabae.jpg",
+        "test/normal skin/depositphotos_249679492-stock-photo-background-human-skin_jpg.rf.4021104d044c917c1cf603f48efe3007.jpg",
+        "test/normal skin/depositphotos_428014252-stock-photo-stretch-marks-skin-middle-aged_jpg.rf.9dbbb4354d421a78bb16d993a7602384.jpg"
+      ]
+    },
+    {
+      "group": "g00268",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Abrasion",
+        "Bruise",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/bruise/images_jpg.rf.b22e876dee313d5dbc02f1d3686b6f32.jpg",
+        "train/normal skin/images_jpg.rf.14689f9a586547f0ab04be510ca21739.jpg",
+        "valid/abrasion/images_jpg.rf.5ab2864efaa4a81976b46dbef3bf7568.jpg"
+      ]
+    },
+    {
+      "group": "g00279",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn",
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/burn/GettyImages-1301315419_jpg.rf.d3c3425a062764e65736e10cc7588df3.jpg",
+        "train/burn/GettyImages-1301315419_jpg.rf.efea2742b0fd4e977aea4ae6ff998f4a.jpg",
+        "train/laceration/4d0c7c03-13c6-4462-93d0-d95a85e6a77d_jpg.rf.0144a8ae6eaa44cb6aabf9e3f2b66f2f.jpg",
+        "train/normal skin/77_bright_jpg.rf.ed7889b805c3df67179af8462b740311.jpg",
+        "valid/burn/GettyImages-1301315419_jpg.rf.6eb4d50f82a8c8e7973a4a2917551a1a.jpg"
+      ]
+    },
+    {
+      "group": "g00281",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/GettyImages-184331289-05a0976711a64de3b0bee31f180cf8ad_jpg.rf.0eb5c961e8730978e42519a03fec123d.jpg",
+        "test/burn/GettyImages-184331289-05a0976711a64de3b0bee31f180cf8ad_jpg.rf.5b5add11616ab549a5e8b39f842913bb.jpg",
+        "test/burn/GettyImages-184331289-05a0976711a64de3b0bee31f180cf8ad_jpg.rf.ecaa10a1c68f52c69762031dcfd9d18f.jpg"
+      ]
+    },
+    {
+      "group": "g00282",
+      "splits": [
+        "test",
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0002_jpg.rf.ce925e5ffee4faa914ea0abd463fac34.jpg",
+        "train/burn/IMG-20231230-WA0024_jpg.rf.2b2035da399f953c7e2c4c097972cd83.jpg",
+        "train/burn/IMG-20231230-WA0024_jpg.rf.62a7f7004974c432bee18e0e2d57c5ce.jpg",
+        "train/burn/IMG-20231230-WA0024_jpg.rf.b07329e2ebdd868062bfd8ec45ef7124.jpg",
+        "train/burn/IMG-20231230-WA0024_jpg.rf.ebfec4ed8287338a577c0e6a7cb45831.jpg",
+        "valid/burn/IMG-20231230-WA0002_jpg.rf.aa2dc765ef1620ab15cffa6985abd7e1.jpg",
+        "valid/burn/IMG-20231230-WA0024_jpg.rf.70da843da3c1aa30be8af7f7b97a2d8c.jpg",
+        "valid/burn/IMG-20231230-WA0024_jpg.rf.7db40488a3fea634331c0c1210afd597.jpg",
+        "test/burn/IMG-20231230-WA0002_jpg.rf.9b4d0902bc3d883cf78aad9c8998d9be.jpg"
+      ]
+    },
+    {
+      "group": "g00286",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0004_jpg.rf.5ebaf23c35c9a442954b2548a19cb847.jpg",
+        "train/burn/IMG-20231230-WA0004_jpg.rf.7d2343f4239cb625c4a4e64f34c61887.jpg",
+        "train/burn/IMG-20231230-WA0004_jpg.rf.ae9c9b634b44d4ce2302343e5ad6fdca.jpg",
+        "train/burn/IMG-20231230-WA0020_jpg.rf.20b06341cc46669cce1abeb9c5ac136b.jpg",
+        "train/burn/IMG-20231230-WA0020_jpg.rf.5f90f277fdc9f6424008e556ddea0d59.jpg",
+        "train/burn/IMG-20231230-WA0020_jpg.rf.b242ab0405aa35fcfed5d6dfa909957a.jpg",
+        "train/burn/IMG-20231230-WA0020_jpg.rf.dad5e51bafeaa42c538accf3fa6d15ce.jpg",
+        "train/burn/IMG-20231230-WA0020_jpg.rf.e454565a4dc8dedff523f43ac6c04f41.jpg",
+        "valid/burn/IMG-20231230-WA0020_jpg.rf.25530e214efb0d357eb4846ad21da137.jpg"
+      ]
+    },
+    {
+      "group": "g00292",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0008_jpg.rf.2fec7713ee74ca7b1902202085de1c8e.jpg",
+        "train/burn/IMG-20231230-WA0008_jpg.rf.45e6396cf62b449321734425fbf09886.jpg",
+        "train/burn/IMG-20231230-WA0008_jpg.rf.85507fce9d272463841c4a61c48bb721.jpg",
+        "train/burn/IMG-20231230-WA0008_jpg.rf.c761c0ab4c2f6565e584483c6bf382a9.jpg",
+        "train/burn/IMG-20231230-WA0008_jpg.rf.f2529ac7f6150dde4fec983052f27f44.jpg",
+        "valid/burn/IMG-20231230-WA0008_jpg.rf.8849cc50b19296f6be3e55579142d229.jpg"
+      ]
+    },
+    {
+      "group": "g00299",
+      "splits": [
+        "test",
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0010_jpg.rf.68265a2fa2e0efa171b984a9dedec4c6.jpg",
+        "train/burn/IMG-20231230-WA0010_jpg.rf.7507b0627b494f87d7b9983c70c4eba4.jpg",
+        "train/burn/IMG-20231230-WA0010_jpg.rf.8a831ea72546175fe340c5fd5d19853c.jpg",
+        "train/burn/IMG-20231230-WA0010_jpg.rf.ff9e96c87081564ba10e1cf9e13c0461.jpg",
+        "train/normal skin/1000_F_88188994_bRiLIk8DIDXQwbJrGTnlmbxcHRSFRETs_jpg.rf.58d6d91738c0dae40d4e343448394e13.jpg",
+        "train/normal skin/depositphotos_118473750-stock-photo-stretch-marks-of-skin-on_jpg.rf.e6f323d02c609f049d1391aed4645dda.jpg",
+        "train/normal skin/depositphotos_219777460-stock-photo-depilation-and-saccharification-depilation-follicle_jpg.rf.c457ca20e1da09613b464bc3ef95de73.jpg",
+        "train/normal skin/depositphotos_29945131-stock-photo-sunburn-skin_jpg.rf.e6b5f757a8d8e51bab9b2e88ebe73519.jpg",
+        "train/normal skin/depositphotos_309791488-stock-photo-ideal-baby-skin_jpg.rf.2f0ae15b3cf8403b472c7ae5d88db5f7.jpg",
+        "train/normal skin/depositphotos_324286418-stock-photo-flat-skin-pattern-background_jpg.rf.274662dff742e080ee49ac12353c9c71.jpg",
+        "train/normal skin/depositphotos_34076467-stock-photo-fabric-texture_jpg.rf.0537dc213bdf8223bd9ab6a2806a0d12.jpg",
+        "train/normal skin/depositphotos_383621698-stock-photo-closeup-human-skin-moles-spots_jpg.rf.6aaa1069b54538ae9f9117d45d119af3.jpg",
+        "valid/burn/IMG-20231230-WA0048_jpg.rf.0103cdd932546ef29db0def5deaae6ad.jpg",
+        "valid/burn/IMG-20231230-WA0048_jpg.rf.cdc288314fb8d172436e5638ddd37580.jpg",
+        "test/burn/IMG-20231230-WA0010_jpg.rf.a713718bac1b4fc07d1511d1cc4a8124.jpg",
+        "test/burn/IMG-20231230-WA0010_jpg.rf.e8b536ab9a957366bd399b10c009d476.jpg",
+        "test/burn/IMG-20231230-WA0048_jpg.rf.44037cf44b906d42052dd64ebba29643.jpg"
+      ]
+    },
+    {
+      "group": "g00303",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0011_jpg.rf.38e04cb03704f8144c97c1dd038c7161.jpg",
+        "train/burn/IMG-20231230-WA0011_jpg.rf.8c08bafc4bfc0b28297b22d922a717e9.jpg",
+        "valid/burn/IMG-20231230-WA0011_jpg.rf.52714fca946d4dc5b24ab4d5b90b5c09.jpg"
+      ]
+    },
+    {
+      "group": "g00305",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0014_jpg.rf.404b42030cd81e215898d9005283f1fa.jpg",
+        "train/burn/IMG-20231230-WA0014_jpg.rf.6731702b5cb253397a7cafcb08b5a02e.jpg",
+        "valid/burn/IMG-20231230-WA0014_jpg.rf.1332d637d8350a864da08e11285ecc42.jpg"
+      ]
+    },
+    {
+      "group": "g00307",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0015_jpg.rf.7cf25943819716287489ce1ae347ccaa.jpg",
+        "train/burn/IMG-20231230-WA0015_jpg.rf.a5d7107b09becfdbab3baf4646205738.jpg",
+        "train/burn/IMG-20231230-WA0015_jpg.rf.b5c3f2f3a65a7d1fc6d0805cbabbdec2.jpg",
+        "train/burn/img1439_jpg.rf.3fc09fae308afc45e17b5ab087186dca.jpg",
+        "train/burn/img1439_jpg.rf.97b31bbdbcd83e132763e5d7019b2c78.jpg",
+        "test/burn/img1439_jpg.rf.5a716dec2189eb59925086d8c3b16cda.jpg"
+      ]
+    },
+    {
+      "group": "g00310",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0016_jpg.rf.0eae3130a1b0b0147c69b808b9df8355.jpg",
+        "train/burn/IMG-20231230-WA0016_jpg.rf.3cac2db79537cd3e885498c9c26d07ab.jpg",
+        "train/burn/IMG-20231230-WA0016_jpg.rf.4408155fe297aa8ba8bfbb7dcab3f71d.jpg",
+        "train/burn/IMG-20231230-WA0016_jpg.rf.73305c41575da93af0bd95e14a33781c.jpg",
+        "train/burn/IMG-20231230-WA0016_jpg.rf.ae03033ee22b16ebb9f20077f4fbab77.jpg",
+        "test/burn/IMG-20231230-WA0016_jpg.rf.c5f9469571cbbaccb8089f4c748193b0.jpg"
+      ]
+    },
+    {
+      "group": "g00332",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0022_jpg.rf.658c58ac14b2a23b0a7d22e1cea92938.jpg",
+        "train/burn/IMG-20231230-WA0022_jpg.rf.c781b6bf6e5a4bf91f45033e66273be6.jpg",
+        "valid/burn/IMG-20231230-WA0022_jpg.rf.2222e9133a27f0fd26af2976833f4868.jpg"
+      ]
+    },
+    {
+      "group": "g00338",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0026_jpg.rf.4c5f52a4efa5274c6e1e6d7fc809e4a8.jpg",
+        "train/burn/IMG-20231230-WA0026_jpg.rf.b61f17c736b326de6976a2c54ccda32b.jpg",
+        "test/burn/IMG-20231230-WA0026_jpg.rf.f22dc191a8e2ba1b6c13d3769401e58c.jpg"
+      ]
+    },
+    {
+      "group": "g00340",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0027_jpg.rf.13758a94f2ed386f8d22cf87e84b1cd9.jpg",
+        "train/burn/IMG-20231230-WA0027_jpg.rf.65c2600431667299815420e108509f4c.jpg",
+        "train/burn/IMG-20231230-WA0027_jpg.rf.a357777eae4d73ea06286265a1723551.jpg",
+        "train/burn/IMG-20231230-WA0027_jpg.rf.ead029a57d234b0f466fe3b0a2c122e9.jpg",
+        "train/burn/IMG-20231230-WA0027_jpg.rf.eedb1e6498b4d97d71879dfbd067c004.jpg",
+        "valid/burn/IMG-20231230-WA0027_jpg.rf.a0fc4be2c0ec6fed8327bb34cc8926c7.jpg"
+      ]
+    },
+    {
+      "group": "g00345",
+      "splits": [
+        "test",
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0029_jpg.rf.813bb78666d54e0d2ebffb776c610ce2.jpg",
+        "train/burn/IMG-20231230-WA0029_jpg.rf.9fd83597d6d2a0bd16a37366a268a4a3.jpg",
+        "train/burn/IMG-20231230-WA0029_jpg.rf.b1e1c9eacc41e06115dcc663ebdbad8f.jpg",
+        "train/burn/IMG-20231230-WA0029_jpg.rf.ee5abe6a6a69e0a1c26d3eed05e265fc.jpg",
+        "valid/burn/IMG-20231230-WA0132_jpg.rf.2414d144c75ba6f96a3f0cb4a2a5da8b.jpg",
+        "valid/burn/IMG-20231230-WA0132_jpg.rf.a2bf414b13053dad4e10ce491fa59788.jpg",
+        "test/burn/IMG-20231230-WA0029_jpg.rf.28be82fc0af30d270b899bbab72fd7bd.jpg",
+        "test/burn/IMG-20231230-WA0132_jpg.rf.73de72e3d9d76c8a8e06261b0357c0e4.jpg"
+      ]
+    },
+    {
+      "group": "g00357",
+      "splits": [
+        "test",
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0034_jpg.rf.0d029e69bf125b6b177d7c9dfedc1e68.jpg",
+        "train/burn/IMG-20231230-WA0034_jpg.rf.0e59395ed00e501db9dbde6d4a0aa679.jpg",
+        "train/burn/IMG-20231230-WA0034_jpg.rf.49189ddd1dd5011b0522c16991d480a4.jpg",
+        "train/burn/IMG-20231230-WA0034_jpg.rf.88b1d39c3c5975853c07dedb78714339.jpg",
+        "train/burn/IMG-20231230-WA0034_jpg.rf.c15abeeb012ceddd7f4cc8d98618e938.jpg",
+        "train/burn/IMG-20231230-WA0061_jpg.rf.5d732b0621defe5692604a858f3406e0.jpg",
+        "train/burn/IMG-20231230-WA0061_jpg.rf.fa040247455de9eaf8dc2dc35458bc5f.jpg",
+        "valid/burn/IMG-20231230-WA0061_jpg.rf.c6743bf92a3a32940173acd089b1c767.jpg",
+        "test/burn/IMG-20231230-WA0034_jpg.rf.660de9e8c1b2727cbd820431620f5910.jpg"
+      ]
+    },
+    {
+      "group": "g00368",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0040_jpg.rf.f8bae9158dfe325219f6f82c6d6303b1.jpg",
+        "test/burn/IMG-20231230-WA0040_jpg.rf.1d6b27c847473537f6bace2391e1e8c6.jpg"
+      ]
+    },
+    {
+      "group": "g00378",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0045_jpg.rf.eabcbfe063873b604da0bcee24f8e6e4.jpg",
+        "valid/burn/IMG-20231230-WA0045_jpg.rf.3aea3a3fac6750496bda74fb3668cc0c.jpg"
+      ]
+    },
+    {
+      "group": "g00379",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0047_jpg.rf.677468f670aad94e626c7c42132bb714.jpg",
+        "train/burn/IMG-20231230-WA0047_jpg.rf.a17c55097e6aa632ba87bcad93dda1ea.jpg",
+        "valid/burn/IMG-20231230-WA0047_jpg.rf.32e1feb9824479bd68ad48019055c7ea.jpg"
+      ]
+    },
+    {
+      "group": "g00382",
+      "splits": [
+        "test",
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0050_jpg.rf.e911cc97795061f96293e6e193a1996d.jpg",
+        "valid/burn/IMG-20231230-WA0050_jpg.rf.7d86a8f6d3e987fb1f1576b7b609d9ca.jpg",
+        "test/burn/IMG-20231230-WA0050_jpg.rf.b3d2a1897bb641cc75cfa31446423082.jpg"
+      ]
+    },
+    {
+      "group": "g00387",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0057_jpg.rf.523d1a4fcfbe28295e9a336a591a1e84.jpg",
+        "train/burn/IMG-20231230-WA0057_jpg.rf.88f18e9ce3f291ac81a89fb36cf839a3.jpg",
+        "test/burn/IMG-20231230-WA0057_jpg.rf.70c69fed093744c7632e0766686e4cd3.jpg"
+      ]
+    },
+    {
+      "group": "g00389",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0058_jpg.rf.83c58d5563dfe2bef93f1977d7e708d5.jpg",
+        "train/burn/IMG-20231230-WA0058_jpg.rf.fb3a2d144c25615bd5deec638b1a8ad9.jpg",
+        "valid/burn/IMG-20231230-WA0058_jpg.rf.27a678482eb564f35ec0915af66d0609.jpg"
+      ]
+    },
+    {
+      "group": "g00396",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0063_jpg.rf.dcbfa913484062899c149c9c781f55a1.jpg",
+        "train/burn/IMG-20231230-WA0063_jpg.rf.eeb5b299cf5a5933596a114a45af871f.jpg",
+        "test/burn/IMG-20231230-WA0063_jpg.rf.07170dd460c3b21913cf75e0977c14b9.jpg"
+      ]
+    },
+    {
+      "group": "g00398",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0065_jpg.rf.d80d76bf12f0b4323266cded2c415ff3.jpg",
+        "test/burn/IMG-20231230-WA0065_jpg.rf.cd70a576554d0d5e4e507617ef2f0d62.jpg"
+      ]
+    },
+    {
+      "group": "g00401",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0067_jpg.rf.07b1bbd865d008398de50c410a8d11df.jpg",
+        "train/burn/IMG-20231230-WA0067_jpg.rf.bf7b4a13bbb9d0a8fc7242392318b402.jpg",
+        "test/burn/IMG-20231230-WA0067_jpg.rf.b93f6a69e4af444bce4ef4a9946f4ef8.jpg",
+        "test/burn/IMG-20231230-WA0067_jpg.rf.ffa6789f26095d82377d022e200c8c4f.jpg"
+      ]
+    },
+    {
+      "group": "g00403",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0069_jpg.rf.4088bf9f1f08ef51aed3e2625638b7c1.jpg",
+        "train/burn/IMG-20231230-WA0069_jpg.rf.40cc3ca2bbcfb05d9ee1b9ee87ef14d3.jpg",
+        "valid/burn/IMG-20231230-WA0069_jpg.rf.4161437628b55c163addbc4f674f47f8.jpg"
+      ]
+    },
+    {
+      "group": "g00405",
+      "splits": [
+        "test",
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0070_jpg.rf.b54c59d459b323a5561484d006298cb4.jpg",
+        "valid/burn/IMG-20231230-WA0070_jpg.rf.2487db4f65f0925fec742284bc912220.jpg",
+        "test/burn/IMG-20231230-WA0070_jpg.rf.eda606a4a4c256b9573e94de43b3e9a2.jpg"
+      ]
+    },
+    {
+      "group": "g00408",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0074_jpg.rf.1402456c5592941843fa33e39560cb27.jpg",
+        "train/burn/IMG-20231230-WA0074_jpg.rf.dbecc13c4a1e8c6455e9f850d1161804.jpg",
+        "valid/burn/IMG-20231230-WA0074_jpg.rf.33357cb6526fcaff04b12a427848a94c.jpg"
+      ]
+    },
+    {
+      "group": "g00410",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0076_jpg.rf.5f0de85c9ed5d107fdae785fe93ddec3.jpg",
+        "train/burn/IMG-20231230-WA0076_jpg.rf.9a8efae3cfb8caf7c128ce8fba27dd57.jpg",
+        "test/burn/IMG-20231230-WA0076_jpg.rf.335ebb26b47a451f8493e68434fd101b.jpg"
+      ]
+    },
+    {
+      "group": "g00412",
+      "splits": [
+        "test",
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0088_jpg.rf.61b327ce0ee0b395a8ea10f58c2f87c5.jpg",
+        "valid/burn/IMG-20231230-WA0088_jpg.rf.20fc791000b48093839ceb00749df14e.jpg",
+        "test/burn/IMG-20231230-WA0088_jpg.rf.24ac9864303aff29f0a9b0cec19ee70a.jpg"
+      ]
+    },
+    {
+      "group": "g00413",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0089_jpg.rf.da0ba573a5e2d337df9e87bbe7387288.jpg",
+        "test/burn/IMG-20231230-WA0089_jpg.rf.e51875ffff3565f5e5cd61dfb40551d9.jpg"
+      ]
+    },
+    {
+      "group": "g00414",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0094_jpg.rf.1c62f0cef6aa19b80ab8b4e5535e270d.jpg",
+        "train/burn/IMG-20231230-WA0094_jpg.rf.55b5570116f1f4ef61869c5fee5a7867.jpg",
+        "test/burn/IMG-20231230-WA0094_jpg.rf.aff07b51c7180f08ad7c689dd3203473.jpg"
+      ]
+    },
+    {
+      "group": "g00419",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0099_jpg.rf.06d2de56912a6393ca002dbfd9c22398.jpg",
+        "train/burn/IMG-20231230-WA0099_jpg.rf.39eef9146b61eb53a3d0a0b792c936f2.jpg",
+        "valid/burn/IMG-20231230-WA0099_jpg.rf.a09922bc2f571e3c9b38f8127b6eaf09.jpg"
+      ]
+    },
+    {
+      "group": "g00424",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0108_jpg.rf.96620b8c68b706c3c9ab77da34dfef51.jpg",
+        "train/burn/IMG-20231230-WA0108_jpg.rf.9678aac926102d0dc1d90bf52132e8a8.jpg",
+        "test/burn/IMG-20231230-WA0108_jpg.rf.3397fc5c13cf5b65e2265b63ee650b02.jpg"
+      ]
+    },
+    {
+      "group": "g00426",
+      "splits": [
+        "test",
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0110_jpg.rf.e15f895f3f4b70a34884267da6f5c6f2.jpg",
+        "valid/burn/IMG-20231230-WA0110_jpg.rf.1f8f6a4e121a1e2c88388672024127bd.jpg",
+        "test/burn/IMG-20231230-WA0110_jpg.rf.ff83e4cd4b676475beb5fec9dd0d48c6.jpg"
+      ]
+    },
+    {
+      "group": "g00430",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0114_jpg.rf.1a992d94ce3f76b05bc78f9779aa4def.jpg",
+        "train/burn/IMG-20231230-WA0114_jpg.rf.94a392b898851c5c24eb0c0085b4d3db.jpg",
+        "valid/burn/IMG-20231230-WA0114_jpg.rf.2dcb26c595c6dabe42f0dca2b4c0ff94.jpg"
+      ]
+    },
+    {
+      "group": "g00432",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0122_jpg.rf.1598a8f9c7f4e18d01ff6cc402c4feea.jpg",
+        "train/burn/IMG-20231230-WA0122_jpg.rf.47fc4066f841abbd77ea119a06213afa.jpg",
+        "valid/burn/IMG-20231230-WA0122_jpg.rf.3258982f2954cfd1d69630f55de37c68.jpg"
+      ]
+    },
+    {
+      "group": "g00434",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0125_jpg.rf.6a2842a8d01928b146e269812bb08334.jpg",
+        "train/burn/IMG-20231230-WA0125_jpg.rf.dbc93c103194701983c9c6cf0cd05828.jpg",
+        "test/burn/IMG-20231230-WA0125_jpg.rf.8055a20dea194f0b42ee21d24c3ed3bb.jpg"
+      ]
+    },
+    {
+      "group": "g00438",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/IMG-20231230-WA0129_jpg.rf.83b02f937b0e232f03530dbe9f67c79c.jpg",
+        "train/burn/IMG-20231230-WA0129_jpg.rf.d07aeab4aa91e3f81fbc001e159eac56.jpg",
+        "valid/burn/IMG-20231230-WA0129_jpg.rf.19eab521040d9cf6e5ef3d38daca3ed5.jpg"
+      ]
+    },
+    {
+      "group": "g00455",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/M3350134_jpg.rf.2ccb484fe82c392af433576f3c7085b4.jpg",
+        "valid/burn/M3350134_jpg.rf.34e344009c75830a8f636712defd7c4c.jpg"
+      ]
+    },
+    {
+      "group": "g00456",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/Nathalie_Rose_before_Kalme_4_png_jpg.rf.d645785aedd132e76e4a45433afa3c6b.jpg",
+        "valid/burn/Nathalie_Rose_before_Kalme_4_png_jpg.rf.5ef7ebaf895943a11c6c3f3d045939fa.jpg"
+      ]
+    },
+    {
+      "group": "g00457",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/OIP_jpeg_jpg.rf.fe382395ff5efea69f9f476be3d7f806.jpg",
+        "test/burn/OIP_jpeg_jpg.rf.da96a4ebdf078e6390bc146797a2408b.jpg"
+      ]
+    },
+    {
+      "group": "g00467",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/deuc_jpg.rf.14909adeaa25b87a4e3f5c201ed9da3a.jpg",
+        "valid/burn/deuc_jpg.rf.98fae6b24f0f7d4bc17272244ae55587.jpg"
+      ]
+    },
+    {
+      "group": "g00473",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/fir_jpg.rf.13eef8cc02ba8b619dee54eaa509bde2.jpg",
+        "train/burn/fir_jpg.rf.76b093112bce9e0218c967c497cb6ed5.jpg",
+        "train/burn/fir_jpg.rf.873f71144fbc8f0ae9da3951b33d09a3.jpg",
+        "train/burn/fir_jpg.rf.9c5e595bbd59e16a5e9c725184067f94.jpg",
+        "test/burn/fir_jpg.rf.58dcc69815b810ce6d03f7979c9f3889.jpg",
+        "test/burn/fir_jpg.rf.c34316dfa303cfea3b44f8f3819f1aab.jpg"
+      ]
+    },
+    {
+      "group": "g00477",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/first_jpg.rf.a255fa00a6ffff7edd56cbcf4f8318e5.jpg",
+        "train/burn/first_jpg.rf.e689234812b2f797183c2600b26624dc.jpg",
+        "valid/burn/first_jpg.rf.e806f9bcca6e1a54e6b31a57e38d4725.jpg"
+      ]
+    },
+    {
+      "group": "g00479",
+      "splits": [
+        "test",
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/image1_jpg.rf.bceb8685e1243ca1727e6f096ce323a2.jpg",
+        "valid/burn/image1_jpg.rf.6cd399960568a8b05d90c6fd880467d2.jpg",
+        "test/burn/image1_jpg.rf.7c399b191253818fc35d401c10b500d4.jpg"
+      ]
+    },
+    {
+      "group": "g00480",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/image5_jpg.rf.6034936ab36e9ab0251098d0be052cb6.jpg",
+        "train/burn/image5_jpg.rf.f972a432e9a52f7a03823c3e5929939e.jpg",
+        "valid/burn/image5_jpg.rf.224146b2ae0a101578ebb84b2e83baba.jpg"
+      ]
+    },
+    {
+      "group": "g00482",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/image7_png_jpg.rf.78a83e5f4e77d16ca6f94d9243107bb3.jpg",
+        "valid/burn/image7_png_jpg.rf.63079403a1274b1beca9b7569fc5bcd1.jpg",
+        "valid/burn/image7_png_jpg.rf.c09ca19cb202bb21ffc7e90873ae919f.jpg"
+      ]
+    },
+    {
+      "group": "g00483",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/img1097_jpg.rf.165e675831e9dc02d224b8f5cfc4b982.jpg",
+        "train/burn/img1097_jpg.rf.ffa77811c78c0d8a7125f86fd48d0f6d.jpg",
+        "test/burn/img1097_jpg.rf.ada0a14443650913ecdad469d5b7e2b3.jpg"
+      ]
+    },
+    {
+      "group": "g00491",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/img1130_jpg.rf.9e5819f446bffb44cd68325e4c130b4b.jpg",
+        "train/burn/img1130_jpg.rf.c3e419113ce75f67dddb967f35c1612e.jpg",
+        "test/burn/img1130_jpg.rf.81ea930ba747401f05f1f61b4ea009cf.jpg"
+      ]
+    },
+    {
+      "group": "g00496",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/img1137_jpg.rf.a97ec84739b7a3b6e1ce03d4ece7d4dd.jpg",
+        "train/burn/img1137_jpg.rf.bcb6c7e2081ffff58396f7b3d7e132fd.jpg",
+        "test/burn/img1137_jpg.rf.569aacba10689e6a48cc542e96e8cecf.jpg"
+      ]
+    },
+    {
+      "group": "g00498",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/img1228_jpg.rf.0396622e433d8840b08f451b3badea4a.jpg",
+        "train/burn/img1228_jpg.rf.8db8f6180d9a33505fffe14327ec03cb.jpg",
+        "valid/burn/img1228_jpg.rf.619dc2281b685042f22e2a22d7bbbb19.jpg"
+      ]
+    },
+    {
+      "group": "g00508",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/img1292_jpg.rf.53d0be944c7085390c7019091431625a.jpg",
+        "train/burn/img1292_jpg.rf.d677ca83e527178af12e5935570c682e.jpg",
+        "test/burn/img1292_jpg.rf.8524e7f6984b51997ca924baa6ce051c.jpg"
+      ]
+    },
+    {
+      "group": "g00518",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/img221_jpg.rf.402012c493f40511f1ea161b18fb6afa.jpg",
+        "train/burn/img221_jpg.rf.e4d5b28bb72911af9be21857717b1835.jpg",
+        "test/burn/img221_jpg.rf.491cc89f84e8aa4b32e4aa082e656c32.jpg"
+      ]
+    },
+    {
+      "group": "g00520",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/img224_jpg.rf.36796fae07a4f210850434812d2c5c35.jpg",
+        "train/burn/img224_jpg.rf.3a5a2ca4014e70140fc7abe85940c869.jpg",
+        "valid/burn/img224_jpg.rf.bacdc0ca0cc2dd72dce0c6e9894f680f.jpg"
+      ]
+    },
+    {
+      "group": "g00522",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/img322_jpg.rf.1d78fad4bb4dd6ff7d4fdddb7b0a3089.jpg",
+        "train/burn/img322_jpg.rf.da6acb4e98227140299ab943ffdb0fc7.jpg",
+        "valid/burn/img322_jpg.rf.e69568b32bc8620ba51c91be01e278a1.jpg"
+      ]
+    },
+    {
+      "group": "g00541",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/img677_jpg.rf.8c9ec1e006541a5ed58680f9bba1aeec.jpg",
+        "train/burn/img677_jpg.rf.906dea6e51484caf9031a98ab057089a.jpg",
+        "valid/burn/img677_jpg.rf.94e926f4be0d5fada01db9f783306c83.jpg"
+      ]
+    },
+    {
+      "group": "g00543",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/img70_jpg.rf.7b62e0a7a75f2049d9ce5696ac0b5c73.jpg",
+        "valid/burn/img70_jpg.rf.4f593c931e4ea7d63f18361f882cf56b.jpg"
+      ]
+    },
+    {
+      "group": "g00547",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/img817_jpg.rf.759ce273446de4bf4486bb0a4c0180d9.jpg",
+        "train/burn/img817_jpg.rf.b2d7b389e091a1a73da06d2ad99ba80a.jpg",
+        "test/burn/img817_jpg.rf.ff1eeeb3bd82a44c3f0118a81c035df5.jpg"
+      ]
+    },
+    {
+      "group": "g00549",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/img820_jpg.rf.44f074fdc4c944f562c1a5984fa93943.jpg",
+        "train/burn/img820_jpg.rf.f60c74e8edda18c3db799ea41cec7d63.jpg",
+        "test/burn/img820_jpg.rf.b11b358bedd5320878cd51d7d5df5846.jpg"
+      ]
+    },
+    {
+      "group": "g00554",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/img839_jpg.rf.d2b2a00059922fb485c13c11f9e04357.jpg",
+        "train/burn/img839_jpg.rf.dbbb17d57fac0910d7b336a70ba7879b.jpg",
+        "valid/burn/img839_jpg.rf.23238075221b73ff72cff3557b087617.jpg"
+      ]
+    },
+    {
+      "group": "g00556",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/img886_jpg.rf.8ccf9cc9eae02045ee8dc4b8609d4e30.jpg",
+        "valid/burn/img886_jpg.rf.0b83d26be5e1786b74bdfcdb08231cba.jpg"
+      ]
+    },
+    {
+      "group": "g00557",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/img942_jpg.rf.045ac743f8f1389a6fec80b4f12bb0ec.jpg",
+        "valid/burn/img942_jpg.rf.450f1941bf27bc9bdbbfcb961e7c6eb6.jpg",
+        "valid/burn/img942_jpg.rf.b20fdea50db4755a2e1ee5e5df825f96.jpg"
+      ]
+    },
+    {
+      "group": "g00564",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/img974_jpg.rf.b56475db16fb60f300b3b26e6baabee4.jpg",
+        "train/burn/img974_jpg.rf.f5bc173d37a1f71f32c8d63c32da6109.jpg",
+        "test/burn/img974_jpg.rf.63eb688f9f43e1e6271f6b6d81cbe734.jpg"
+      ]
+    },
+    {
+      "group": "g00568",
+      "splits": [
+        "test",
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/m_hamm_c10_f04_png_jpg.rf.2b9fb563eb4672ce57bade15dd32649e.jpg",
+        "valid/burn/m_hamm_c10_f04_png_jpg.rf.d3f777f3c128975b07d252c8d7ad6ee2.jpg",
+        "test/burn/m_hamm_c10_f04_png_jpg.rf.33cab13d86e610f0926ca22bbbc9c9a8.jpg"
+      ]
+    },
+    {
+      "group": "g00569",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "train/burn/patient-on-table-just-before-the-first-operation-mummified-right-hand-and-distal_jpg.rf.798dd188a321345535ae377cc4beb9a7.jpg",
+        "train/burn/patient-on-table-just-before-the-first-operation-mummified-right-hand-and-distal_jpg.rf.ec5c0b0bc544d34dcfe5f125acbeafc1.jpg",
+        "test/burn/patient-on-table-just-before-the-first-operation-mummified-right-hand-and-distal_jpg.rf.53c2c7998d0d304b164b47042e71fb8a.jpg"
+      ]
+    },
+    {
+      "group": "g00584",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/133_jpg.rf.88c1a4cb3374ba4729fe8b8cfc0cfd76.jpg",
+        "valid/normal skin/133_jpg.rf.30783390139d0da41f2aba1224a88971.jpg"
+      ]
+    },
+    {
+      "group": "g00587",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/137_jpg.rf.ce6843571f2714e7c605e16338928326.jpg",
+        "test/normal skin/137_jpg.rf.fdca5325c149d01556aa71773b34be56.jpg"
+      ]
+    },
+    {
+      "group": "g00589",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/139_jpg.rf.7a60534c7187553d3689e6c815fb4d2d.jpg",
+        "test/normal skin/139_jpg.rf.a08a35e522e7a2c2364e0d0d22ed6a62.jpg"
+      ]
+    },
+    {
+      "group": "g00609",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/163_jpg.rf.5427240d7aef9914ccc7d2246ff60155.jpg",
+        "test/normal skin/163_jpg.rf.5b65caee7732c953158bdb2ba9d5ff64.jpg"
+      ]
+    },
+    {
+      "group": "g00666",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/laceration/261_jpg.rf.17e3742bc0b8044ef2d55fb4cb18a943.jpg",
+        "train/normal skin/124_jpg.rf.0fa687d06edf74cfb1086c1ce463293c.jpg",
+        "valid/laceration/124_jpg.rf.790fcbb6a9c79e41a2866160f6d809a6.jpg"
+      ]
+    },
+    {
+      "group": "g00676",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Laceration"
+      ],
+      "files": [
+        "train/laceration/280_jpg.rf.a2bd5d79ae8e02872a804eb5d80e8c10.jpg",
+        "test/laceration/95f0217921802aedf75a74440589951f_jpg.rf.deee6092438b3b38d1a5ee5b5066b77f.jpg"
+      ]
+    },
+    {
+      "group": "g00703",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Laceration"
+      ],
+      "files": [
+        "train/laceration/cut-3-_jpg.rf.791644a90175f176ce5a4c2e56c8a164.jpg",
+        "test/laceration/Cut-3-_jpg.rf.0fd930d61b998ccf3b426cd53ce8dbb6.jpg"
+      ]
+    },
+    {
+      "group": "g00713",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Laceration"
+      ],
+      "files": [
+        "train/laceration/cut-41-_jpg.rf.68711e261f70488b80bb2a0502865620.jpg",
+        "test/laceration/cut-16-_jpg.rf.ee4fcec54217ac8fe8b59008978d521c.jpg"
+      ]
+    },
+    {
+      "group": "g00806",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/125_jpg.rf.2f3750470c77b85b98f72c31457d8716.jpg",
+        "valid/laceration/125_jpg.rf.0b06c4d8bf6d1c275f93bad1c31a8230.jpg"
+      ]
+    },
+    {
+      "group": "g00812",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/134_jpg.rf.12dafe99bc5a64e5441ae8a1a8098674.jpg",
+        "valid/laceration/134_jpg.rf.d9e59831f88b31b6fdfd4f9ab146d51f.jpg"
+      ]
+    },
+    {
+      "group": "g00818",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/13_jpg.rf.39b57ba0de122c602959e67d9f3c8825.jpg",
+        "test/laceration/13_jpg.rf.dab9afd4d989f8d2e50325379081f0b7.jpg"
+      ]
+    },
+    {
+      "group": "g00821",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/141_jpg.rf.85efb3d452e68254edb4542b612e6ae8.jpg",
+        "test/laceration/141_jpg.rf.9f43977074d9728935b340ea392689bf.jpg"
+      ]
+    },
+    {
+      "group": "g00850",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/164_jpg.rf.f6f6e2f6bfab6c61467e7728235df565.jpg",
+        "test/laceration/164_jpg.rf.5c4debb5272ef1c16392f56a3a2f633d.jpg"
+      ]
+    },
+    {
+      "group": "g01043",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/depositphotos_317315745-stock-photo-macro-photo-of-the-young_jpg.rf.ee45a499739a94e35be8666355c04807.jpg",
+        "valid/normal skin/depositphotos_307352880-stock-photo-macro-photo-of-the-young_jpg.rf.468d76004b11ae5b676d413502275050.jpg"
+      ]
+    },
+    {
+      "group": "g01070",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/depositphotos_360297720-stock-photo-dry-human-skin-woman-leg_jpg.rf.15783f5497bf47b9769cc4f97ab1a544.jpg",
+        "test/normal skin/1000_F_322548558_CmhjPLZjmbqTTVBf8MKl7ay1jK3zx39z_jpg.rf.8f56e149b2055572daf5bb0469683085.jpg"
+      ]
+    },
+    {
+      "group": "g01143",
+      "splits": [
+        "test",
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Abrasion",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/images-19-_jpg.rf.e2bacacf742e9db13bde16cffcc5f2d2.jpg",
+        "valid/abrasion/istockphoto-1277257276-170667a_jpg.rf.6098285055753d829fafb9cdeebeb215.jpg",
+        "test/abrasion/images-19-_jpg.rf.33b994863076158af57b7cb4cd3e1afe.jpg"
+      ]
+    },
+    {
+      "group": "g01144",
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        "Abrasion",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/images-2-_jpg.rf.52010fa093a418b588e8c4dfc6f862b6.jpg",
+        "test/abrasion/images-2-_jpg.rf.21448ca11263206224981a285e612e94.jpg"
+      ]
+    },
+    {
+      "group": "g01145",
+      "splits": [
+        "train",
+        "valid"
+      ],
+      "labels": [
+        "Abrasion",
+        "Normal Skin"
+      ],
+      "files": [
+        "train/normal skin/images-20-_jpg.rf.fbd8bcfd18acf17b07d9685fd6f9f88a.jpg",
+        "valid/abrasion/images-20-_jpg.rf.7b0d9b2d5c89e701d881b19336e8a164.jpg"
+      ]
+    },
+    {
+      "group": "g01234",
+      "splits": [
+        "test",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "valid/burn/Fourth-Degree-of-Burn_jpg.rf.c4f95ff1fe6883a1c8d29cdf175ffb50.jpg",
+        "test/burn/Fourth-Degree-of-Burn_jpg.rf.42e8290dee0b8a11ed50a8ec9b8c72b3.jpg"
+      ]
+    },
+    {
+      "group": "g01242",
+      "splits": [
+        "test",
+        "valid"
+      ],
+      "labels": [
+        "Burn"
+      ],
+      "files": [
+        "valid/burn/IMG-20231230-WA0023_jpg.rf.1710a0953b817aa8c829cb9c007a397f.jpg",
+        "test/burn/IMG-20231230-WA0023_jpg.rf.40f9a07029611a2fc780f5bf25f373d9.jpg",
+        "test/burn/IMG-20231230-WA0023_jpg.rf.5de1683c0d7fdd281834c7f4f803fc2b.jpg"
+      ]
+    },
+    {
+      "group": "g01293",
+      "splits": [
+        "test",
+        "valid"
+      ],
+      "labels": [
+        "Laceration",
+        "Normal Skin"
+      ],
+      "files": [
+        "valid/laceration/151_jpg.rf.05115c051dc1c00892cdf1e441df202c.jpg",
+        "test/normal skin/151_jpg.rf.39e70675afc90fe50cccaa436427e519.jpg"
+      ]
+    }
+  ],
+  "image_sizes": {
+    "640x640": 639,
+    "600x400": 118,
+    "810x1080": 49,
+    "275x183": 38,
+    "1000x667": 26,
+    "450x300": 18,
+    "600x450": 15,
+    "1440x1920": 12,
+    "482x1080": 9,
+    "225x225": 8
+  },
+  "modes": {
+    "RGB": 1515
+  }
+}
