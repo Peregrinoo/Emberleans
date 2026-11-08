@@ -1,181 +1,161 @@
-# EmberLens
+<div align="center">
 
-**On-device skin lesion image classification using MobileNetV3, PyTorch and Apple Core ML.**
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="design/branding/logo/emberlens-logo-horizontal-negative.svg">
+  <img src="design/branding/logo/emberlens-logo-horizontal-color.svg" alt="EmberLens" width="320">
+</picture>
 
-EmberLens é uma prova de conceito de visão computacional que classifica fotografias de pele em cinco categorias
-(**Burn**, **Abrasion**, **Bruise**, **Laceration** e **Normal Skin**) com uma MobileNetV3 Small treinada por
-transfer learning em PyTorch e exportada para Core ML. O modelo foi preparado para execução local num futuro app
-iOS em SwiftUI.
+### Primeiros minutos importam. O EmberLens ajuda a não errar neles.
 
-> ⚠️ **EmberLens não é um dispositivo médico e não é uma ferramenta de diagnóstico.** É um projeto experimental e
-> educacional, treinado com cerca de 1.100 fotos distintas coletadas da web e com rótulos sem verificação clínica.
-> Suas saídas não devem orientar decisões de saúde.
+Um app para iPhone que analisa a foto de uma lesão de pele no próprio aparelho e,<br>
+a partir de quatro perguntas rápidas, mostra o que fazer, o que evitar e quando procurar ajuda.
 
-## Objetivo
+![Swift](https://img.shields.io/badge/Swift-5-F05138?logo=swift&logoColor=white)
+![SwiftUI](https://img.shields.io/badge/SwiftUI-iOS%2017+-0A84FF?logo=apple&logoColor=white)
+![Core ML](https://img.shields.io/badge/Core%20ML-on--device-34C759?logo=apple&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-MobileNetV3-EE4C2C?logo=pytorch&logoColor=white)
+![License](https://img.shields.io/badge/licen%C3%A7a-MIT-lightgrey)
 
-Verificar experimentalmente se uma rede leve, adequada para dispositivos móveis, consegue distinguir características
-visuais de queimaduras e de outras lesões de pele, e deixar o pipeline completo reproduzível do dataset ao modelo
-on-device: inspeção dos dados, treino, avaliação, interpretabilidade e conversão.
+<img src="docs/screenshots/hero.png" alt="Telas do EmberLens" width="100%">
 
-## Tecnologias
+</div>
 
-| área | ferramentas |
-|---|---|
-| treino e avaliação | Python 3.12, PyTorch 2.14, torchvision, scikit-learn, matplotlib |
-| interpretabilidade | Grad-CAM (implementação própria com hooks) |
-| conversão | coremltools 9.0, PyTorch 2.7 (TorchScript → ML Program) |
-| on-device (próxima etapa) | Core ML, Vision, SwiftUI, iOS 15+ |
+> [!WARNING]
+> **O EmberLens não é um dispositivo médico e não faz diagnósticos.** É um projeto experimental e de portfólio. Em
+> uma emergência, ligue **192 (SAMU)**.
 
-## Arquitetura
+## O problema
 
-`torchvision.models.mobilenet_v3_small` com pesos ImageNet (`IMAGENET1K_V1`) e o último layer substituído por
-`Linear(1024, 5)`, totalizando 1,52 M de parâmetros. O treino ocorreu em duas fases: primeiro só o classificador, com
-o backbone congelado; depois o fine-tuning parcial dos últimos 4 blocos de `features`, com LR menor. O checkpoint foi
-escolhido pelo macro F1 de validação, com early stopping.
+Queimaduras, cortes e pancadas acontecem em casa, na cozinha, no trabalho, e quase nunca perto de um profissional de
+saúde. Nos primeiros minutos, quem está ali precisa decidir sozinho, e as decisões mais comuns costumam vir do
+improviso: passar manteiga ou pasta de dente, pôr gelo direto na pele, estourar bolhas. As principais orientações de
+primeiros socorros, como as do NHS e da Cruz Vermelha, recomendam justamente evitar essas práticas.
 
-## Dataset e procedência
+Há uma segunda dúvida, tão importante quanto a primeira: **isso é caso de procurar atendimento?** Sem orientação,
+algumas pessoas vão ao pronto-socorro sem necessidade, e outras demoram em situações que pedem ajuda imediata.
 
-[Basic Wound Classify](https://universe.roboflow.com/mahrukh-qmtw8/basic-wound-classify-mpoys-rlpoq/dataset/1)
-(Roboflow Universe, v1), licença **CC BY 4.0**, com 1.515 arquivos em cinco classes. As imagens foram coletadas da web
-pelo autor do dataset e incluem fotos de banco de imagens e capturas de vídeo. **As imagens não são redistribuídas
-neste repositório.** Para reproduzir o treino, baixe o export em `ml/dataset/raw/`.
+Aplicativos de "diagnóstico por foto" parecem uma solução óbvia, mas são perigosos: uma foto não mostra a
+profundidade de uma queimadura, não sabe se foi um produto químico e não percebe que a pessoa está com dificuldade
+para respirar.
 
-A inspeção encontrou problemas que mudaram a forma de avaliar o modelo:
+## A proposta
 
-* **Duplicatas:** 225 grupos de cópias quase idênticas (366 cópias extras), entre reexportações, espelhamentos,
-  rotações, recortes e alterações de cor, concentrados em Burn.
-* **Vazamento:** 105 desses grupos (295 imagens) tinham cópias em mais de um split original (train/valid/test). O
-  split foi **refeito em 70/15/15 por grupo**, estratificado por classe. Nenhum grupo atravessa splits, e na validação
-  e no teste cada foto conta uma vez.
-* **Rotulagem:** a mesma foto aparece como Abrasion e como Laceration (6 imagens removidas), e 15 imagens não tinham
-  rótulo.
+O EmberLens separa duas coisas que costumam ser misturadas:
 
-Resultado: **1.421 imagens usadas**, estimadas em **1.131 fotos distintas**. Detalhes em
-[`docs/methodology.md`](docs/methodology.md).
+| | **Análise da imagem** | **Orientações** |
+|---|---|---|
+| vem de | um modelo de visão computacional | quatro perguntas respondidas pelo usuário |
+| mostra | com qual categoria visual a foto mais se parece | o que fazer, o que evitar e quando procurar atendimento |
+| decide os cuidados? | **não** | sim, com regras conservadoras e fontes citadas |
 
-| classe | treino | validação | teste |
-|---|---|---|---|
-| Abrasion | 75 | 15 | 15 |
-| Bruise | 137 | 30 | 29 |
-| Burn | 280 (94 fotos distintas) | 24 | 25 |
-| Laceration | 137 | 30 | 29 |
-| Normal Skin | 417 | 89 | 89 |
+Assim a tecnologia contribui com o que faz bem, que é reconhecer padrões visuais, sem ser usada para decidir o que
+ela não consegue avaliar.
 
-## Pipeline de treinamento
+- **Emergência em primeiro lugar.** Qualquer sinal de alerta, como sangramento intenso ou choque elétrico, interrompe
+  as perguntas e mostra na hora o botão para ligar para o SAMU 192.
+- **Na dúvida, mais cautela.** "Não sei informar" nunca é tratado como "está tudo bem".
+- **Nada inventado.** As orientações são textos fixos, sem IA generativa, baseados em NHS, Cruz Vermelha Britânica,
+  American Burn Association e MedlinePlus ([`docs/guidance-sources.md`](docs/guidance-sources.md)).
+- **Privacidade total.** A foto é analisada no próprio iPhone, nunca sai do aparelho, e o app funciona sem internet.
 
-```
-inspect_dataset → build_splits → train (head) → train (finetune últimos 4 blocos)
-→ evaluate (val; test uma única vez) → report (galeria + Grad-CAM) → export_coreml → validate_conversion
-```
+## Como funciona
 
-O pré-processamento é o padrão dos pesos ImageNet: `Resize(256) → CenterCrop(224) → Normalize`. No treino há
-augmentation on-the-fly (crop aleatório, flip, rotação ±15°, jitter leve, sem alterar o matiz). A loss é
-cross-entropy com pesos por classe e label smoothing 0,05, com otimizador AdamW e cosine LR.
+<table>
+  <tr>
+    <td align="center" width="25%"><img src="docs/screenshots/01-home.png" alt="Tela inicial"></td>
+    <td align="center" width="25%"><img src="docs/screenshots/03-preview.png" alt="Prévia da imagem"></td>
+    <td align="center" width="25%"><img src="docs/screenshots/04-questionnaire.png" alt="Questionário"></td>
+    <td align="center" width="25%"><img src="docs/screenshots/06-result.png" alt="Resultado"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>1. Fotografe</b><br><sub>Câmera ou galeria</sub></td>
+    <td align="center"><b>2. Analise</b><br><sub>No próprio iPhone</sub></td>
+    <td align="center"><b>3. Responda</b><br><sub>4 perguntas, um toque cada</sub></td>
+    <td align="center"><b>4. Veja</b><br><sub>Análise e pontuações</sub></td>
+  </tr>
+</table>
 
-## Metodologia de avaliação
+<table>
+  <tr>
+    <td align="center" width="33%"><img src="docs/screenshots/07-guidance.png" alt="O que fazer agora"></td>
+    <td align="center" width="33%"><img src="docs/screenshots/08-seek-care.png" alt="Quando procurar atendimento"></td>
+    <td align="center" width="33%"><img src="docs/screenshots/09-emergency.png" alt="Alerta de emergência"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>O que fazer agora</b><br><sub>Passos curtos e numerados</sub></td>
+    <td align="center"><b>Quando procurar atendimento</b><br><sub>Sinais de alerta sempre visíveis</sub></td>
+    <td align="center"><b>Emergência</b><br><sub>Alerta e SAMU 192 antes de tudo</sub></td>
+  </tr>
+</table>
 
-As escolhas de modelo usaram apenas a validação. O teste independente foi avaliado **uma única vez**, ao final, e há
-um bloqueio no script contra reavaliações. As métricas reportadas são accuracy, precision/recall/F1 por classe, macro
-F1, recall de Burn, matriz de confusão e intervalos de confiança de 95% por bootstrap.
+## Onde isso pode ser aplicado
 
-## Resultados
+O EmberLens é um protótipo, mas o desenho dele aponta para usos reais, **desde que acompanhados de validação clínica**:
 
-Modelo PyTorch FP32 (`ml/models/best_model.pt`):
+- **Educação em primeiros socorros.** Uma ferramenta de apoio em escolas, empresas e treinamentos de brigada, para
+  ensinar o que fazer e, principalmente, o que não fazer.
+- **Locais com pouca conectividade.** Como tudo roda no aparelho, a orientação funciona em zonas rurais, em
+  deslocamento ou quando a rede cai.
+- **Pré-atendimento em telessaúde.** Como etapa de organização antes de uma consulta: a pessoa registra a foto e as
+  respostas, e o profissional recebe um contexto melhor.
+- **Referência de IA responsável em saúde.** Um exemplo de como colocar um modelo de visão num produto sem
+  transformá-lo em diagnóstico: separar o que o modelo vê do que se recomenda, tratar emergências primeiro e citar
+  fontes.
 
-| métrica | validação (n = 188) | **teste (n = 187)** | IC 95% teste |
-|---|---|---|---|
-| accuracy | 0,872 | **0,840** | 0,79 – 0,89 |
-| macro F1 | 0,808 | **0,767** | 0,69 – 0,83 |
-| recall Burn | 0,750 | **0,680** (17/25) | 0,48 – 0,86 |
+## Design
 
-<p>
-  <img src="ml/reports/test/confusion_matrix.png" alt="Matriz de confusão do teste" width="420">
-</p>
+Identidade visual própria: o símbolo é uma lente focal, a cor de destaque é o laranja Ember, a tipografia é SF Pro e
+todos os componentes são nativos do iOS. O app suporta modo escuro, Dynamic Type e VoiceOver.
 
-![Curvas de treinamento](ml/reports/training_curves.png)
+<table>
+  <tr>
+    <td align="center" width="33%"><img src="docs/screenshots/11-home-dark.png" alt="Tela inicial no modo escuro"></td>
+    <td align="center" width="33%"><img src="docs/screenshots/12-result-dark.png" alt="Resultado no modo escuro"></td>
+    <td align="center" width="33%"><img src="docs/screenshots/10-about.png" alt="Tela Sobre"></td>
+  </tr>
+</table>
 
-Principais erros: queimaduras graves classificadas como Abrasion ou Laceration, confusão entre Abrasion e
-Laceration, e hematomas classificados como Burn. O **Grad-CAM revelou atalhos visuais**: em capturas de vídeo de
-Burn, a ativação fica na barra preta do player, e há casos influenciados por uma sombra ou por uma marca d'água.
-Análise completa em [`docs/model-evaluation.md`](docs/model-evaluation.md).
+O guia de marca e o design system estão em [`design/`](design/README.md).
 
-## Conversão para Core ML
+## Por baixo do capô
 
-`ml/exports/EmberLens.mlpackage`: ML Program, **FP16**, **iOS 15+**, **3,15 MB**. A entrada é uma imagem RGB
-256 × 256, e o recorte central 224 × 224 e a normalização ImageNet estão incorporados ao modelo. As saídas são
-`classLabel` e `classLabel_probs`. No app, o Vision com `.centerCrop` fornece a entrada esperada.
+Em resumo:
 
-As verificações executadas em Linux passaram: arquitetura, carregamento estrito, ordem das classes,
-pré-processamento (Δ = 0), PyTorch vs TorchScript (Δ = 0) e estrutura do `.mlpackage`. **A inferência com o runtime
-do Core ML ainda não foi executada**, porque exige macOS, e por isso a equivalência numérica PyTorch ↔ Core ML ainda
-não está declarada. Detalhes e passos pendentes em [`docs/coreml-conversion.md`](docs/coreml-conversion.md).
+- **Modelo:** uma MobileNetV3 Small, rede leve pensada para celulares, treinada em PyTorch com transfer learning para
+  reconhecer cinco categorias: queimadura, abrasão, hematoma, laceração e pele normal.
+- **Dados:** cerca de 1.100 fotos distintas do dataset público
+  [Basic Wound Classify](https://universe.roboflow.com/mahrukh-qmtw8/basic-wound-classify-mpoys-rlpoq/dataset/1).
+  Duplicatas foram agrupadas e o conjunto foi redividido para que nenhuma foto de teste tivesse uma cópia no treino.
+- **Resultado:** **84% de acerto** num conjunto de teste avaliado uma única vez. É um número honesto para um dataset
+  pequeno, mas longe de uso clínico.
+- **No iPhone:** o modelo foi convertido para Core ML (3 MB) e roda com Vision. O app é SwiftUI com MVVM, e as regras
+  de orientação são funções puras cobertas por testes, incluindo a verificação das 1.008 combinações de respostas.
 
-## Estrutura do repositório
+Para quem quiser os detalhes: [metodologia](docs/methodology.md) · [avaliação do modelo](docs/model-evaluation.md) ·
+[conversão para Core ML](docs/coreml-conversion.md) · [pipeline de ML](ml/README.md)
 
-```
-emberlens/
-├── README.md · LICENSE · .gitignore · .gitattributes
-├── ml/
-│   ├── README.md                      # comandos do pipeline
-│   ├── requirements.txt               # treino/avaliação
-│   ├── requirements-coreml.txt        # conversão (torch 2.7 + coremltools 9.0)
-│   ├── src/                           # dataset, treino, avaliação, Grad-CAM, inferência, Core ML
-│   ├── configs/                       # model_config, class_mapping, preprocessing
-│   ├── models/                        # best_model.pt (LFS) + runs/ (históricos e logs)
-│   ├── exports/                       # EmberLens.mlpackage (LFS) + relatório de validação
-│   ├── dataset/                       # splits.csv e relatórios de inspeção (sem imagens)
-│   └── reports/                       # métricas, matrizes de confusão, curvas, predições
-├── docs/
-│   ├── methodology.md
-│   ├── model-evaluation.md
-│   └── coreml-conversion.md
-└── ios/
-    └── README.md                      # plano de integração SwiftUI (sem código ainda)
-```
+## Como rodar
 
-## Reprodução
+Requer um Mac com Xcode 27 ou superior; o app roda em iOS 17+.
 
 ```bash
-git clone https://github.com/<usuario>/emberlens.git && cd emberlens
-git lfs pull                                   # baixa best_model.pt e EmberLens.mlpackage
-cd ml
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-
-python src/predict.py foto.jpg --cam foto_gradcam.jpg        # inferência com o modelo treinado
+git clone https://github.com/Peregrinoo/Emberleans.git && cd Emberleans
+git lfs pull                       # baixa o modelo Core ML
+open ios/emberleans/emberleans.xcodeproj
 ```
 
-Treino, avaliação e conversão completos estão em [`ml/README.md`](ml/README.md). No Windows, a conversão para Core ML
-deve ser feita via WSL2, como descrito em [`docs/coreml-conversion.md`](docs/coreml-conversion.md#executar-a-conversão-no-windows).
+Escolha um simulador de iPhone e pressione ⌘R.
 
-## Limitações conhecidas
+## Limitações
 
-* Dataset pequeno: 94 fotos distintas de Burn no treino e 25 no teste, o que gera intervalos de confiança largos.
-* A accuracy é inflada por Normal Skin, que tem 48% do teste e é composta de close-ups de textura.
-* Imagens da web com vieses de enquadramento, marcas d'água e capturas de vídeo; o modelo aprendeu parte desses
-  atalhos.
-* Rótulos sem verificação clínica, sem grau de queimadura, e com ambiguidade entre Abrasion e Laceration.
-* Generalização para fotos reais de câmera de iPhone **não medida**.
-* Nenhuma validação clínica. Não é dispositivo médico.
-* Equivalência PyTorch ↔ Core ML ainda não medida no runtime nativo (macOS).
+- O dataset é pequeno e vem da web, e o modelo ainda erra com frequência, principalmente em queimaduras graves.
+- O desempenho em fotos reais tiradas com iPhone não foi medido.
+- As orientações seguem fontes internacionais e precisariam de revisão por profissionais de saúde e com material do
+  Ministério da Saúde antes de qualquer uso real.
 
-## Próximos passos (SwiftUI)
+## Licença e créditos
 
-1. Rodar `ml/src/validate_coreml_macos.py` num Mac e registrar a equivalência numérica.
-2. Criar o app SwiftUI em `ios/` com Vision + Core ML (`.centerCrop`, orientação EXIF), exibindo as cinco
-   probabilidades e um aviso de uso experimental.
-3. Medir latência no dispositivo e comparar Neural Engine e CPU.
-4. Em paralelo, ampliar o dataset de queimaduras com fotos distintas e avaliar com um conjunto externo.
+Código e documentação sob [MIT](LICENSE). O dataset *Basic Wound Classify*, de Mahrukh (Roboflow Universe), é
+licenciado sob CC BY 4.0 e não é redistribuído aqui.
 
-Plano detalhado em [`ios/README.md`](ios/README.md).
-
-## Publicação dos artefatos
-
-`ml/models/best_model.pt` (6,2 MB) e `ml/exports/EmberLens.mlpackage` (3,1 MB) são rastreados por **Git LFS**
-(`.gitattributes`). Se o LFS não estiver disponível, publique os dois como anexos de um **GitHub Release**
-(ex.: `v1.0.0-ml`) e registre o SHA-256 de cada arquivo nas notas.
-
-## Licença e atribuição
-
-Código e documentação: [MIT](LICENSE). O dataset *Basic Wound Classify*, de Mahrukh (Roboflow Universe), é licenciado
-sob CC BY 4.0 e não é redistribuído aqui. Os pesos iniciais são os da MobileNetV3 Small ImageNet do torchvision.
+Desenvolvido por [Gabriel Chaves](https://chaaves.xyz).
