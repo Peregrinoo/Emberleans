@@ -1,161 +1,141 @@
-<div align="center">
+<p align="center">
+  <img src="docs/imagens/capa.png" alt="EmberLens: ao lado do título 'Primeiros minutos importam.', três telas do app: a tela inicial, o resultado com a análise da imagem e as pontuações, e a lista do que fazer agora." width="100%">
+</p>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="design/branding/logo/emberlens-logo-horizontal-negative.svg">
-  <img src="design/branding/logo/emberlens-logo-horizontal-color.svg" alt="EmberLens" width="320">
-</picture>
+<p align="center">
+  <strong>EmberLens</strong> ajuda a não errar nos primeiros minutos depois de uma lesão de pele.<br>
+  App iOS em SwiftUI que analisa a foto no próprio iPhone e, a partir de quatro perguntas, mostra o que fazer, o que evitar e quando procurar ajuda.
+</p>
 
-### Primeiros minutos importam. O EmberLens ajuda a não errar neles.
-
-Um app para iPhone que analisa a foto de uma lesão de pele no próprio aparelho e,<br>
-a partir de quatro perguntas rápidas, mostra o que fazer, o que evitar e quando procurar ajuda.
-
-![Swift](https://img.shields.io/badge/Swift-5-F05138?logo=swift&logoColor=white)
-![SwiftUI](https://img.shields.io/badge/SwiftUI-iOS%2017+-0A84FF?logo=apple&logoColor=white)
-![Core ML](https://img.shields.io/badge/Core%20ML-on--device-34C759?logo=apple&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-MobileNetV3-EE4C2C?logo=pytorch&logoColor=white)
-![License](https://img.shields.io/badge/licen%C3%A7a-MIT-lightgrey)
-
-<img src="docs/screenshots/hero.png" alt="Telas do EmberLens" width="100%">
-
-</div>
-
-> [!WARNING]
-> **O EmberLens não é um dispositivo médico e não faz diagnósticos.** É um projeto experimental e de portfólio. Em
-> uma emergência, ligue **192 (SAMU)**.
+<br>
 
 ## O problema
 
-Queimaduras, cortes e pancadas acontecem em casa, na cozinha, no trabalho, e quase nunca perto de um profissional de
-saúde. Nos primeiros minutos, quem está ali precisa decidir sozinho, e as decisões mais comuns costumam vir do
-improviso: passar manteiga ou pasta de dente, pôr gelo direto na pele, estourar bolhas. As principais orientações de
-primeiros socorros, como as do NHS e da Cruz Vermelha, recomendam justamente evitar essas práticas.
+Queimadura na cozinha, corte no trabalho, pancada em casa: quase nunca há um
+profissional de saúde por perto quando acontece. Nos primeiros minutos, quem
+está ali decide sozinho, e é comum decidir pelo improviso: manteiga, pasta de
+dente, gelo direto na pele, bolha estourada. As orientações de primeiros
+socorros de referência, como as do NHS e da Cruz Vermelha, pedem justamente o
+contrário.
 
-Há uma segunda dúvida, tão importante quanto a primeira: **isso é caso de procurar atendimento?** Sem orientação,
-algumas pessoas vão ao pronto-socorro sem necessidade, e outras demoram em situações que pedem ajuda imediata.
+A segunda dúvida pesa tanto quanto a primeira: **isso é caso de procurar
+atendimento?** Sem orientação, há quem corra para o pronto-socorro sem
+necessidade e quem espere demais numa situação que pedia ajuda imediata.
 
-Aplicativos de "diagnóstico por foto" parecem uma solução óbvia, mas são perigosos: uma foto não mostra a
-profundidade de uma queimadura, não sabe se foi um produto químico e não percebe que a pessoa está com dificuldade
-para respirar.
+E a resposta fácil, um app que "diagnostica pela foto", é perigosa. Uma foto não
+mostra a profundidade de uma queimadura, não sabe se foi um produto químico e
+não percebe que a pessoa está com dificuldade para respirar.
 
-## A proposta
+## O que ele faz
 
-O EmberLens separa duas coisas que costumam ser misturadas:
+<p align="center">
+  <img src="docs/imagens/telas.png" alt="Quatro telas do app em sequência: 1. Fotografe, com a escolha entre câmera e galeria; 2. Analise, com a prévia da foto; 3. Responda, com a pergunta 'Como aconteceu a lesão?'; 4. Veja, com a análise da imagem e as pontuações das cinco categorias." width="100%">
+</p>
 
-| | **Análise da imagem** | **Orientações** |
-|---|---|---|
-| vem de | um modelo de visão computacional | quatro perguntas respondidas pelo usuário |
-| mostra | com qual categoria visual a foto mais se parece | o que fazer, o que evitar e quando procurar atendimento |
-| decide os cuidados? | **não** | sim, com regras conservadoras e fontes citadas |
+Você fotografa a lesão ou escolhe uma foto da galeria. O modelo analisa a imagem
+ali mesmo, sem internet, e o app faz quatro perguntas de um toque: como
+aconteceu, onde está, se há algum sinal de alerta e quando foi. Pronto, a tela
+de resultado responde ao que importa naquele momento:
 
-Assim a tecnologia contribui com o que faz bem, que é reconhecer padrões visuais, sem ser usada para decidir o que
-ela não consegue avaliar.
+- **Com o que a foto se parece?** A categoria visual mais próxima e as pontuações das cinco categorias, em barras.
+- **O que eu faço agora?** Passos curtos e numerados, como resfriar a região por 20 minutos com água corrente.
+- **O que eu não devo fazer?** Uma lista curta: gelo direto na pele, receitas caseiras, estourar bolhas.
+- **Preciso de atendimento?** Os sinais que pedem um serviço de saúde, sempre visíveis, com o botão do SAMU 192.
 
-- **Emergência em primeiro lugar.** Qualquer sinal de alerta, como sangramento intenso ou choque elétrico, interrompe
-  as perguntas e mostra na hora o botão para ligar para o SAMU 192.
-- **Na dúvida, mais cautela.** "Não sei informar" nunca é tratado como "está tudo bem".
-- **Nada inventado.** As orientações são textos fixos, sem IA generativa, baseados em NHS, Cruz Vermelha Britânica,
-  American Burn Association e MedlinePlus ([`docs/guidance-sources.md`](docs/guidance-sources.md)).
-- **Privacidade total.** A foto é analisada no próprio iPhone, nunca sai do aparelho, e o app funciona sem internet.
+As orientações mudam com as respostas. Uma queimadura de agora começa pelo
+resfriamento; a mesma queimadura de alguns dias atrás não, porque resfriar só
+ajuda nas primeiras horas. Um corte começa por estancar o sangramento, uma
+pancada pelo frio protegido.
 
-## Como funciona
+## A foto não decide os cuidados
 
-<table>
-  <tr>
-    <td align="center" width="25%"><img src="docs/screenshots/01-home.png" alt="Tela inicial"></td>
-    <td align="center" width="25%"><img src="docs/screenshots/03-preview.png" alt="Prévia da imagem"></td>
-    <td align="center" width="25%"><img src="docs/screenshots/04-questionnaire.png" alt="Questionário"></td>
-    <td align="center" width="25%"><img src="docs/screenshots/06-result.png" alt="Resultado"></td>
-  </tr>
-  <tr>
-    <td align="center"><b>1. Fotografe</b><br><sub>Câmera ou galeria</sub></td>
-    <td align="center"><b>2. Analise</b><br><sub>No próprio iPhone</sub></td>
-    <td align="center"><b>3. Responda</b><br><sub>4 perguntas, um toque cada</sub></td>
-    <td align="center"><b>4. Veja</b><br><sub>Análise e pontuações</sub></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="docs/imagens/regras.png" alt="Diagrama: a foto gera a análise da imagem, marcada como informação complementar, e uma linha tracejada com o símbolo de proibido indica que ela não decide os cuidados. As respostas do usuário passam por regras conservadoras baseadas em NHS, Cruz Vermelha, American Burn Association e MedlinePlus, e só então viram as orientações." width="100%">
+</p>
 
-<table>
-  <tr>
-    <td align="center" width="33%"><img src="docs/screenshots/07-guidance.png" alt="O que fazer agora"></td>
-    <td align="center" width="33%"><img src="docs/screenshots/08-seek-care.png" alt="Quando procurar atendimento"></td>
-    <td align="center" width="33%"><img src="docs/screenshots/09-emergency.png" alt="Alerta de emergência"></td>
-  </tr>
-  <tr>
-    <td align="center"><b>O que fazer agora</b><br><sub>Passos curtos e numerados</sub></td>
-    <td align="center"><b>Quando procurar atendimento</b><br><sub>Sinais de alerta sempre visíveis</sub></td>
-    <td align="center"><b>Emergência</b><br><sub>Alerta e SAMU 192 antes de tudo</sub></td>
-  </tr>
-</table>
+Uma classificação errada não pode virar um cuidado errado. Por isso a análise da
+imagem e as orientações são caminhos separados: a regra que monta as
+orientações recebe só as respostas do usuário. O resultado do modelo não é nem
+um parâmetro dela.
 
-## Onde isso pode ser aplicado
+Cada orientação é um texto fixo, escrito a partir de fontes que qualquer pessoa
+pode conferir, e não é gerado por IA. Na dúvida, o app escolhe a cautela: "não
+sei informar" nunca é lido como "está tudo bem", e sem saber a causa da lesão
+ele não arrisca cuidados específicos. As regras e as fontes de cada frase estão
+em [`docs/guidance-sources.md`](docs/guidance-sources.md).
 
-O EmberLens é um protótipo, mas o desenho dele aponta para usos reais, **desde que acompanhados de validação clínica**:
+## Emergência em primeiro lugar
 
-- **Educação em primeiros socorros.** Uma ferramenta de apoio em escolas, empresas e treinamentos de brigada, para
-  ensinar o que fazer e, principalmente, o que não fazer.
-- **Locais com pouca conectividade.** Como tudo roda no aparelho, a orientação funciona em zonas rurais, em
-  deslocamento ou quando a rede cai.
-- **Pré-atendimento em telessaúde.** Como etapa de organização antes de uma consulta: a pessoa registra a foto e as
-  respostas, e o profissional recebe um contexto melhor.
-- **Referência de IA responsável em saúde.** Um exemplo de como colocar um modelo de visão num produto sem
-  transformá-lo em diagnóstico: separar o que o modelo vê do que se recomenda, tratar emergências primeiro e citar
-  fontes.
+<p align="center">
+  <img src="docs/imagens/emergencia.png" alt="À esquerda, a pergunta 'Existe algum sinal de alerta?' com opções como sangramento intenso e dificuldade para respirar. À direita, o resultado com o alerta 'Ligue agora para o SAMU 192' e o botão de ligar acima da foto." width="100%">
+</p>
 
-## Design
+Dificuldade para respirar, sangramento intenso, choque elétrico, produto
+químico: basta um toque em qualquer sinal de alerta para o questionário parar.
+O alerta e o botão de ligar para o SAMU 192 vão para o topo da tela, antes da
+foto e de qualquer outra informação. Não é preciso terminar as perguntas para
+ser orientado a buscar ajuda.
 
-Identidade visual própria: o símbolo é uma lente focal, a cor de destaque é o laranja Ember, a tipografia é SF Pro e
-todos os componentes são nativos do iOS. O app suporta modo escuro, Dynamic Type e VoiceOver.
+## Onde pode ser aplicado
 
-<table>
-  <tr>
-    <td align="center" width="33%"><img src="docs/screenshots/11-home-dark.png" alt="Tela inicial no modo escuro"></td>
-    <td align="center" width="33%"><img src="docs/screenshots/12-result-dark.png" alt="Resultado no modo escuro"></td>
-    <td align="center" width="33%"><img src="docs/screenshots/10-about.png" alt="Tela Sobre"></td>
-  </tr>
-</table>
+O EmberLens é um protótipo, mas o desenho dele aponta para usos reais, desde
+que acompanhados de validação clínica:
 
-O guia de marca e o design system estão em [`design/`](design/README.md).
+- **Educação em primeiros socorros**, em escolas, empresas e treinamentos de brigada, para ensinar o que fazer e, principalmente, o que não fazer.
+- **Lugares com pouca conectividade**, porque tudo roda no aparelho: zona rural, estrada, rede fora do ar.
+- **Pré-atendimento em telessaúde**, organizando a foto e as respostas antes da consulta para o profissional chegar com mais contexto.
+- **Referência de IA responsável em saúde**, mostrando como usar um modelo de visão sem transformá-lo em diagnóstico.
 
-## Por baixo do capô
+## Por dentro
 
-Em resumo:
+| | |
+| --- | --- |
+| **App** | SwiftUI, Observation (`@Observable`), arquitetura MVVM, injeção de dependências por protocolos e estados explícitos da análise |
+| **Modelo** | MobileNetV3 Small treinada em PyTorch por transfer learning e convertida para Core ML (3 MB), executada com Vision no próprio iPhone |
+| **Dados** | Cerca de 1.100 fotos distintas do dataset público [Basic Wound Classify](https://universe.roboflow.com/mahrukh-qmtw8/basic-wound-classify-mpoys-rlpoq/dataset/1), com duplicatas agrupadas para que nenhuma foto de teste tivesse cópia no treino. Acerto de 84% num teste avaliado uma única vez |
+| **Orientações** | Regras puras e determinísticas, cobertas por testes com Swift Testing que percorrem as 1.008 combinações de respostas e conferem fontes e termos proibidos |
+| **Acessibilidade** | Dynamic Type, Dark Mode, VoiceOver com rótulos e áreas de toque amplas |
 
-- **Modelo:** uma MobileNetV3 Small, rede leve pensada para celulares, treinada em PyTorch com transfer learning para
-  reconhecer cinco categorias: queimadura, abrasão, hematoma, laceração e pele normal.
-- **Dados:** cerca de 1.100 fotos distintas do dataset público
-  [Basic Wound Classify](https://universe.roboflow.com/mahrukh-qmtw8/basic-wound-classify-mpoys-rlpoq/dataset/1).
-  Duplicatas foram agrupadas e o conjunto foi redividido para que nenhuma foto de teste tivesse uma cópia no treino.
-- **Resultado:** **84% de acerto** num conjunto de teste avaliado uma única vez. É um número honesto para um dataset
-  pequeno, mas longe de uso clínico.
-- **No iPhone:** o modelo foi convertido para Core ML (3 MB) e roda com Vision. O app é SwiftUI com MVVM, e as regras
-  de orientação são funções puras cobertas por testes, incluindo a verificação das 1.008 combinações de respostas.
+O repositório tem as partes lado a lado: `ios/` é o app, `ml/` é o treino e a
+conversão do modelo, e `design/` é a identidade visual. Os detalhes técnicos
+estão em [metodologia](docs/methodology.md), [avaliação do modelo](docs/model-evaluation.md)
+e [conversão para Core ML](docs/coreml-conversion.md).
 
-Para quem quiser os detalhes: [metodologia](docs/methodology.md) · [avaliação do modelo](docs/model-evaluation.md) ·
-[conversão para Core ML](docs/coreml-conversion.md) · [pipeline de ML](ml/README.md)
+## Rodando
 
-## Como rodar
+<details>
+<summary>Ver os passos</summary>
 
-Requer um Mac com Xcode 27 ou superior; o app roda em iOS 17+.
+<br>
+
+Você precisa de um Mac com o Xcode recente e do Git LFS, que baixa o modelo.
 
 ```bash
-git clone https://github.com/Peregrinoo/Emberleans.git && cd Emberleans
-git lfs pull                       # baixa o modelo Core ML
+git clone https://github.com/Peregrinoo/Emberleans.git
+cd Emberleans
+git lfs pull
 open ios/emberleans/emberleans.xcodeproj
 ```
 
-Escolha um simulador de iPhone e pressione ⌘R.
+Escolha um simulador de iPhone e rode com ⌘R. O treino e a avaliação do modelo
+estão em [`ml/README.md`](ml/README.md).
 
-## Limitações
+</details>
 
-- O dataset é pequeno e vem da web, e o modelo ainda erra com frequência, principalmente em queimaduras graves.
-- O desempenho em fotos reais tiradas com iPhone não foi medido.
-- As orientações seguem fontes internacionais e precisariam de revisão por profissionais de saúde e com material do
-  Ministério da Saúde antes de qualquer uso real.
+## Limites e próximos passos
 
-## Licença e créditos
+O EmberLens não é um dispositivo médico e não faz diagnósticos. O dataset é
+pequeno e vem da web, o modelo ainda erra com frequência e o desempenho em fotos
+reais de iPhone não foi medido. Em uma emergência, ligue 192.
 
-Código e documentação sob [MIT](LICENSE). O dataset *Basic Wound Classify*, de Mahrukh (Roboflow Universe), é
-licenciado sob CC BY 4.0 e não é redistribuído aqui.
+- Ampliar o dataset com fotos distintas e avaliar com um conjunto externo.
+- Revisar as orientações com profissionais de saúde e material do Ministério da Saúde.
+- Medir o desempenho do modelo em fotos tiradas com a câmera do iPhone.
+- Abrir as fontes de cada orientação direto na tela, com um toque.
 
-Desenvolvido por [Gabriel Chaves](https://chaaves.xyz).
+<br>
+
+<p align="center">
+  Feito por <a href="https://chaaves.xyz">Gabriel Chaves</a>, estudante de Engenharia de Telecomunicações no IFCE.<br>
+  <sub>Fotos de exemplo do dataset Basic Wound Classify (Roboflow Universe, CC BY 4.0).</sub>
+</p>
